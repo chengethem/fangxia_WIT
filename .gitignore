@@ -38,3 +38,5 @@ jspm_packages
 
 #project
 yarn.lock
+.sass-cache
+.idea
