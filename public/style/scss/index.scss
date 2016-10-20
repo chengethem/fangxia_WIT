@@ -1,0 +1,35 @@
+@import "normal/scaffy/bundle.scss";
+
+.hide{
+  display:none;
+}
+html,body{
+  height:100%;
+}
+body{
+  background:#fff;
+  height:100%;
+  width:100%;
+  background-image:image-url('456x.jpg');
+  background-repeat:no-repeat;
+  background-size:100%;
+}
+.header{
+  height:90px;
+  background-color:rgba(#000,.3);
+  color:#fff;
+  position:relative;
+}
+.logo{
+
+}
+.nav{
+  float:right;
+  margin-top:40px;
+  font-size:15px;
+  padding-bottom:3px;
+  border-bottom:1px solid #fff;
+}
+.lang{
+  @include pos(right,10px,top,20px);
+}

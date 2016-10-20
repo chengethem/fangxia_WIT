@@ -1,0 +1,280 @@
+@mixin a($acolor, $aline:none, $ahcolor:false, $ahline:none) {
+  color:$acolor;
+  text-decoration:$aline;
+  &:hover{
+    @if $ahcolor{
+      color:$ahcolor;
+    }
+    text-decoration:$ahline;
+  }
+}
+
+@mixin bcenter($height, $width:'', $align:'') {
+  height:$height;
+  line-height:$height;
+  @if $width!=''{
+    width:$width;
+  }
+  @if $align!=''{
+    text-align:$align;
+  }
+}
+
+@mixin border-arrow($dir0:top, $dir1:bottom, $n1:0, $dir2:left, $n2:0, $color:#ccc, $size:8px, $filldir:after) {
+  &:#{$filldir}{
+    content:'';
+    position:absolute;
+    #{$dir1}:$n1;
+    #{$dir2}:$n2;
+    border:$size solid transparent;
+    border-#{$dir0}-color:$color;
+  }
+}
+
+@mixin text-arrow($dir1:top, $n1:0, $dir2:left, $n2:0, $bcolor:#ccc, $acolor:#fff, $font:16px, $width:2px) {
+  &:before, &:after, .hack-before, .hack-after{
+    content:'◆';
+    font-family:'SimSun';
+    font-size:$font;
+    color:$bcolor;
+    @include pos($dir1, $n1, $dir2, $n2);
+    margin-left:-($font/2);
+    @include unselectable;
+  }
+  &:after, .hack-after{
+    color:$acolor;
+    #{$dir1}:$n1 + $width;
+  }
+  cursor:default;
+}
+
+@mixin center($height, $align:'') {
+  height:$height;
+  line-height:$height;
+  @if $align!=''{
+    text-align:$align;
+  }
+}
+
+@mixin bflex($dir:'') {
+  display:-webkit-box !important;
+  display:-webkit-flex !important;
+  display:flex !important;
+  @if $dir!=''{
+    -webkit-flex-direction:column;
+    flex-direction:column;
+    -webkit-box-orient:vertical;
+    box-orient:vertical;
+  }
+}
+
+@mixin cflex($i:0) {
+  -webkit-box-flex:$i;
+  -webkit-flex:$i;
+  flex:$i;
+}
+
+@mixin circle($r, $deg, $x:$r, $y:$r) {
+  left:$x + $r*sin($deg);
+  top:$y - $r*cos($deg);
+}
+
+@mixin display($dispalys...) {
+  @each $display in $dispalys{
+    .#{$display}{
+      display:$display;
+    }
+  }
+}
+
+@mixin fcenter($d:a) {
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:flex;
+  @if $d==a or $d==v{
+    -webkit-box-align:center;
+    -webkit-align-items:center;
+    align-items:center;
+  }
+  @if $d==a or $d==h{
+    -webkit-box-pack:center;
+    -webkit-justify-content:center;
+    justify-content:center;
+  }
+}
+
+@mixin hairline{
+  display:block;
+  width:100%;
+  height:1px;
+  @include background-image(linear-gradient(0deg, #d3d3d3, #d3d3d3 50%, transparent 50%));
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position:bottom;
+}
+
+@mixin img-inset-shadow($shadow:'inset 0 1px 3px rgba(0,0,0,.15)', $radius:0) {
+  &:after{
+    content:'';
+    display:block;
+    width:100%;
+    height:100%;
+    box-shadow:#{$shadow};
+    @include pos();
+    @if $radius{
+      border-radius:$radius;
+    }
+  }
+}
+
+@mixin initColor($color, $classes) {
+  @each $class in $classes{
+    .#{$class}{
+      color:nth($color, index($classes, $class));
+    }
+    .bg-#{$class}{
+      background-color:nth($color, index($classes, $class));
+    }
+  }
+}
+
+@mixin ioscroll($d:overflow-y) {
+  #{$d}:auto;
+  -webkit-overflow-scrolling:touch;
+}
+
+@mixin mobi-img($img:'', $width:'', $height:'', $bs:cover) {
+  @if ($width==''){
+    width:ceil(image-width(#{$img})/2);
+  }
+  @if ($height==''){
+    height:ceil(image-height(#{$img})/2);
+  }
+  @if ($img!=''){
+    background-image:image-url(#{$img});
+  }
+  background-size:$bs;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
+@mixin copyPicSize($img:'') {
+  width:ceil(image-width(#{$img})/2);
+  height:ceil(image-height(#{$img})/2);
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+@mixin p($indent:2em, $bottom:1.2em) {
+  word-wrap:break-word;
+  -ms-word-wrap:break-word;
+  //text-align: justify;
+  text-justify:inter-ideograph;
+  hyphens:auto;
+  text-indent:$indent;
+  margin-bottom:$bottom;
+}
+
+@mixin pos($dir1:top, $x:0, $dir2:left, $y:0, $pos:absolute) {
+  position:$pos;
+  #{$dir1}:$x;
+  #{$dir2}:$y;
+}
+
+@mixin row{
+  @include clearfix;
+  position:relative;
+  box-sizing:border-box;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+//$sprites: sprite-map("sprites/*.png");
+//$sprites-retina: sprite-map("sprites-retina/*.png");
+@mixin sprite-background($name, $sprites, $sprites-retina) {
+  background-image:sprite-url($sprites);
+  background-position:sprite-position($sprites, $name);
+  background-repeat:no-repeat;
+  display:block;
+  height:image-height(sprite-file($sprites, $name));
+  width:image-width(sprite-file($sprites, $name));
+  @media (-webkit-min-device-pixel-ratio:2), (-o-min-device-pixel-ratio:3/2), (min-device-pixel-ratio:2) {
+    // Workaround for https://gist.github.com/2140082
+    @if (sprite-position($sprites, $name) != sprite-position($sprites-retina, $name)){
+      $ypos:round(nth(sprite-position($sprites-retina, $name), 2) / 2);
+      background-position:0 $ypos;
+    }
+    // Grab size of non-retina sprite image.
+    @include background-size(image-width(sprite-url($sprites)) image-height(sprite-url($sprites)));
+    background-image:sprite-url($sprites-retina);
+  }
+}
+
+//$wechat-mobi-sprites:sprite-map('wechat/mobile/*.png');
+@mixin sprite-mobi-background($name, $sprites,$display:block,$fix:0) {
+  background-image:sprite-url($sprites);
+  background-size:floor(image-width(sprite-path($sprites))/2) floor(image-height(sprite-path($sprites))/2)+$fix;
+  background-repeat:no-repeat;
+  @if ($display!=''){
+    display:$display;
+  }
+
+  $ypos:round(nth(sprite-position($sprites, $name), 2) / 2);
+  background-position:0 $ypos;
+  width:round(image-width(sprite-file($sprites, $name))/2);
+  height:round(image-height(sprite-file($sprites, $name))/2);
+}
+
+@mixin thin-border($border:1px solid #d3d3d3, $radius:'', $dir:'', $special_radius:'',$display:block) {
+  @if ($display!=''){
+    display:$display;
+  }
+  position:relative;
+  box-sizing:border-box;
+  @if ($radius!=''){
+    border-radius:$radius;
+  }
+  &:after{
+    content:'';
+    display:block;
+    @if ($dir!=''){
+      @if ($dir=='v'){
+        border-top:$border;
+        border-bottom:$border;
+      } @else{
+        border-#{$dir}:$border;
+      }
+    } @else{
+      border:$border;
+    }
+    @include transform(scale(.5));
+    -webkit-transform-origin:0 0;
+    transform-origin:0 0;
+    width:200%;
+    height:200%;
+    position:absolute;
+    left:0;
+    top:0;
+    pointer-events:none;
+    box-sizing:border-box;
+    @if ($radius!=''){
+      @if ($special_radius==1){
+        border-radius:$radius;
+      } @else{
+        border-radius:$radius*2;
+      }
+    }
+  }
+}
+
+@mixin tap-highlight($color:rgba(#fff, .0)) {
+  -webkit-tap-highlight-color:$color;
+}
+
+@mixin webkit-cut($line:4) {
+  word-wrap:break-word;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:$line;
+  display:-webkit-box;
+  overflow:hidden;
+}

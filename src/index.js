@@ -21,9 +21,9 @@ app.use(convert(json()));
 app.use(convert(logger()));
 
 // static
-// app.use(convert(koaStatic(path.join(__dirname, '../public'), {
-//   pathPrefix: '',
-// })));
+app.use(convert(koaStatic(path.join(__dirname, '../public'), {
+  pathPrefix: '',
+})));
 
 // views
 app.use(views(path.join(__dirname, '../views'), {
@@ -48,7 +48,6 @@ app.use(async (ctx, next) => {
 
 // response router
 app.use(async (ctx, next) => {
-  console.info(routes.routes(),routes.routes().router.stack);
   await routes.routes()(ctx, next);
 });
 

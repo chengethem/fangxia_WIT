@@ -1,16 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="description" content="">
-  <meta name="keyword" content="">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <link rel="stylesheet" href="{static}/static/style/css/os/main.css" />
-  {+css /}
-  <title>{+title}demo{/title}</title>
-</head>
-<body class="index">
-  {+content /}
-  {+js /}
-</body>
-</html>
+{> "views/layout.dust" /}
+{<content}
+  <div class="header">
+    <div class="logo">logo</div>
+    <div class="nav">
+      <ul class="nav__list">
+        <li>
+          <div class="nav__item">关于我们</div>
+          <ul class="hide">
+            <li><a href="">设计理念</a></li>
+            <li><a href="">创始人</a></li>
+            <li><a href="">奖项及媒体</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="lang">EN</div>
+  </div>
+{/content}
+{<js}
+{/js}

@@ -1,0 +1,35 @@
+@include webfont(icomoon,food);
+.icon,.bicon:before,.aicon:after{
+  font-family:'food';
+}
+.bicon:before,.aicon:after{
+  content:attr(data-content);
+}
+
+.line-list{
+  @include clearfix;
+  li{
+    float:left;
+  }
+}
+
+.p{
+  @include p;
+}
+
+a{
+  @include notap;
+  @include nocall;
+  @include unselectable;
+  color:$link;
+  &:active{
+    color:$word;
+  }
+}
+
+.perspective{
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  perspective: 800px;
+  display: inline-block;
+}

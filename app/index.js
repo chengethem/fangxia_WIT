@@ -70,9 +70,9 @@ app.use((0, _koaConvert2.default)((0, _koaJson2.default)()));
 app.use((0, _koaConvert2.default)((0, _koaLogger2.default)()));
 
 // static
-// app.use(convert(koaStatic(path.join(__dirname, '../public'), {
-//   pathPrefix: '',
-// })));
+app.use((0, _koaConvert2.default)((0, _koaStaticPlus2.default)(_path2.default.join(__dirname, '../public'), {
+  pathPrefix: ''
+})));
 
 // views
 app.use((0, _koaViews2.default)(_path2.default.join(__dirname, '../views'), {
@@ -124,11 +124,10 @@ app.use(function () {
       while (1) {
         switch (_context2.prev = _context2.next) {
           case 0:
-            console.info(_routes2.default.routes(), _routes2.default.routes().router.stack);
-            _context2.next = 3;
+            _context2.next = 2;
             return _routes2.default.routes()(ctx, next);
 
-          case 3:
+          case 2:
           case 'end':
             return _context2.stop();
         }

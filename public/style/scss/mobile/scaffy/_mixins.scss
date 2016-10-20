@@ -1,0 +1,75 @@
+@mixin clearfix{
+  &:before,
+  &:after{
+    content:" ";
+    display:table;
+    clear:both;
+  }
+}
+
+@mixin font-smooth{
+  -webkit-font-smoothing:antialiased;
+}
+
+@mixin hyphens($mode: auto) {
+  word-wrap:break-word;
+  -webkit-hyphens:$mode;
+  hyphens:$mode;
+}
+
+@mixin nocall{
+  -webkit-touch-callout:none;
+}
+
+@mixin notap{
+  @include tap-highlight;
+}
+
+@mixin sprite($x,$y,$img) {
+  background-image:url($img);
+  background-position:$x $y;
+  background-repeat:no-repeat;
+}
+
+@mixin size($a,$b) {
+  width:#{$a};
+  height:#{$b};
+}
+
+@mixin square($long:18px) {
+  width:$long;
+  height:$long;
+}
+
+@mixin text-overflow{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+@mixin unselectable{
+  -webkit-user-select:none;
+  user-select:none;
+}
+
+@mixin nopointer{
+  pointer-events:none;
+}
+
+@mixin webfont($name:lianbo,$rename:$name) {
+  @font-face{
+    font-family:'#{$rename}';
+    src:font-url("#{$name}.ttf") format('truetype');
+    font-weight:normal;
+    font-style:normal;
+  }
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    //兼容android
+    @font-face{
+      font-family:'#{$rename}';
+      src:font-url("#{$name}.svg") format('svg');
+    }
+  }
+}
+
+@import "helper";

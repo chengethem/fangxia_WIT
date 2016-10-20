@@ -1,0 +1,138 @@
+@mixin a($acolor,$aline:none,$ahcolor:false,$ahline:none) {
+  color:$acolor;
+  text-decoration:$aline;
+  &:hover{
+    @if $ahcolor{
+      color:$ahcolor;
+    }
+    text-decoration:$ahline;
+  }
+}
+
+@mixin bcenter($height,$width:'',$align:'') {
+  height:$height;
+  line-height:$height;
+  @if $width!=''{
+    width:$width;
+  }
+  @if $align!=''{
+    text-align:$align;
+  }
+}
+
+@mixin center($height,$align:'') {
+  height:$height;
+  line-height:$height;
+  @if $align!=''{
+    text-align:$align;
+  }
+}
+
+@mixin circle($r,$deg,$x:$r,$y:$r) {
+  left:$x + $r*sin($deg);
+  top:$y - $r*cos($deg);
+}
+
+@mixin display($dispalys...) {
+  @each $display in $dispalys{
+    .#{$display}{
+      display:$display;
+    }
+  }
+}
+
+@mixin img-inset-shadow($radius:2px) {
+  &:after{
+    content:'';
+    display:block;
+    width:100%;
+    height:100%;
+    box-shadow:inset 0 1px 3px rgba(#000, .15);
+    @include pos();
+    border-radius:$radius;
+  }
+  position:relative;
+  display:inline-block;
+}
+
+@mixin initColor($color,$classes) {
+  @each $class in $classes{
+    .#{$class}{
+      color:nth($color, index($classes, $class));
+    }
+    .bg-#{$class}{
+      background-color:nth($color, index($classes, $class));
+    }
+  }
+}
+
+@mixin ioscroll($d:overflow-y) {
+  #{$d}:scroll;
+  -webkit-overflow-scrolling:touch;
+}
+
+@mixin p($indent:2em,$bottom:1.2em) {
+  word-wrap:break-word;
+  -ms-word-wrap:break-word;
+  //text-align: justify;
+  text-justify:inter-ideograph;
+  hyphens:auto;
+  text-indent:$indent;
+  margin-bottom:$bottom;
+}
+
+@mixin pos($dir1:top,$x:0,$dir2:left,$y:0,$pos:absolute) {
+  position:$pos;
+  #{$dir1}:$x;
+  #{$dir2}:$y;
+}
+
+@mixin row{
+  @include clearfix;
+  position:relative;
+  box-sizing:border-box;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+@mixin sprite-mobi-background($name, $sprites, $sprites2x,$display:block,$fix:0) {
+  background-image:sprite-url($sprites);
+  background-size:ceil(image-width(sprite-path($sprites))) ceil(image-height(sprite-path($sprites)));
+  background-repeat:no-repeat;
+  @if ($display!=''){
+    display:$display;
+  }
+
+  $ypos:round(nth(sprite-position($sprites, $name), 2));
+  background-position:0 $ypos;
+  width:round(image-width(sprite-file($sprites, $name)));
+  height:round(image-height(sprite-file($sprites, $name)));
+
+  @media only screen and (-webkit-min-device-pixel-ratio:2),
+  only screen and (min--moz-device-pixel-ratio:2),
+  only screen and (-o-min-device-pixel-ratio:2/1) {
+    background-image:sprite-url($sprites2x);
+    background-size:ceil(image-width(sprite-path($sprites2x))/2) ceil(image-height(sprite-path($sprites2x))/2)+$fix;
+    background-repeat:no-repeat;
+    @if ($display!=''){
+      display:$display;
+    }
+
+    $ypos:round(nth(sprite-position($sprites2x, $name), 2) / 2);
+    background-position:0 $ypos;
+    width:round(image-width(sprite-file($sprites2x, $name))/2);
+    height:round(image-height(sprite-file($sprites2x, $name))/2);
+  }
+}
+
+@mixin tap-highlight($color:rgba(#fff,.0)) {
+  -webkit-tap-highlight-color:$color;
+}
+
+@mixin webkit-cut($line:4) {
+  word-wrap:break-word;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:$line;
+  display:-webkit-box;
+  overflow:hidden;
+}

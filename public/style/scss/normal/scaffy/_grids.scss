@@ -1,0 +1,50 @@
+@import "config";
+
+.clearfix{
+  @include clearfix;
+}
+
+.col1of2,
+.col1of3, .col2of3,
+.col1of4, .col2of4, .col3of4,
+.col1of5, .col2of5, .col3of5, .col4of5,
+.col1of6, .col2of6, .col3of6, .col4of6, .col5of6{
+  float:left;
+}
+
+@for $i from 2 through 6{
+  @for $j from 1 through $i - 1{
+    .col#{$j}of#{$i}{
+      width:percentage($j / $i);
+      box-sizing:border-box;
+    }
+  }
+}
+
+.row{
+  width:100%;
+  @include row;
+}
+.left{
+  float:left;
+}
+.right{
+  float:right;
+}
+.center{
+  margin-left:auto;
+  margin-right:auto;
+  float:none;
+}
+.hidden{
+  display:none;
+}
+.by-left{
+  text-align:left;
+}
+.by-right{
+  text-align:right;
+}
+.by-center{
+  text-align:center;
+}

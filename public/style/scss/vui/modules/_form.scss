@@ -1,0 +1,15 @@
+.v-input-date{
+  //android hack, label for is not work on android
+  width:100%;
+  height:100%;
+  @include pos(left, 0, top, 0);
+  @include tap-highlight;
+}
+
+.v-textarea{
+  border:1px solid $refrigerating;
+  border-radius:2px;
+  padding:5px 3px;
+  font-size:14px;
+  resize:vertical;
+}

@@ -1,0 +1,73 @@
+@import "config";
+
+$_hn-sizes:$h0, $h1, $h2, $h3, $h4, $h5, $h6;
+$_hn-bottom:0px, 15px, 13px, 8px, 7px, 5px, 3px;
+@for $i from 0 through 6{
+  @if ($i==0){
+    .h#{$i}{
+      font-size:nth($_hn-sizes, $i+1);
+    }
+  } @else{
+    h#{$i}, .h#{$i}{
+      font-size:nth($_hn-sizes, $i+1);
+    }
+    h#{$i}{
+      margin-bottom:.5em;
+    }
+  }
+}
+
+// Font colors
+
+@include initColor($_color, $_color-class);
+@include initColor($_custom-color, $_custom-color-class);
+
+a{
+  color:$link;
+  text-decoration:none;
+}
+
+.border-box{
+  @include box-sizing(border-box);
+}
+
+.closed-box{
+  @include clearfix;
+  overflow:hidden;
+  position:relative;
+}
+
+.ios-scroll{
+  @include ioscroll;
+}
+
+.noscroll{
+  overflow:hidden !important;
+}
+
+.notap{
+  //reset tap style
+  @include notap;
+}
+
+.nocall{
+  @include nocall;
+}
+
+.noselect{
+  @include unselectable;
+}
+
+.nopointer{
+  @include nopointer;
+}
+
+.relative{
+  position:relative;
+}
+
+.text-overflow{
+  @include text-overflow;
+}
+
+@include display(block, inline, inline-block);

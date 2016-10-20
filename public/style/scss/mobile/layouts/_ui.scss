@@ -1,0 +1,27 @@
+html,body{
+  height:100%;
+}
+
+body{
+  color:$word;
+  font: 400 #{$h0}/1.35 $base-font;
+  @include font-smooth;
+}
+
+.v-container{
+  height:100%;
+}
+
+.container{
+  width:$container-width;
+  background-color:rgba($firm,.1);
+}
+.wraper{
+  width:$wraper-width;
+  @include row;
+}
+
+.row{
+  width:100%;
+  @include row;
+}

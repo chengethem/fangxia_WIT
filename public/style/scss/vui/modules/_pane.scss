@@ -1,0 +1,27 @@
+$pane-item-pad:80px;
+.v-pane-item-title{
+  width:$pane-item-pad;
+  display:inline-block;
+  float:left;
+}
+
+.v-pane-item-value{
+  margin-left:$pane-item-pad;
+  position:relative;
+  @include line-break;
+  display:block;
+  height:44px;
+}
+
+.v-pane-head{
+  background-color:#f5f5f5;
+}
+
+$pane-item-tier:28px;
+.v-tier{
+  padding-left:$pane-item-tier;
+}
+
+.v-tier2{
+  padding-left:$pane-item-tier*2;
+}

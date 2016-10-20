@@ -1,0 +1,12 @@
+@import "scaffy/config";
+@import "library/ui";
+@import "layouts/ui";
+
+a{
+  @include nocall;
+  @include notap;
+}
+
+html,body{
+  height:100%;
+}

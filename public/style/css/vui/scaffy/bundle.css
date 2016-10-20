@@ -1,0 +1,344 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+ol, ul { list-style: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+caption, th, td { text-align: center; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: none; }
+
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+a img { border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
+
+img { max-width: 100%; vertical-align: middle; }
+
+i { font-style: normal; }
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+
+.clearfix:before, .clearfix:after { content: " "; display: table; clear: both; }
+
+.col1of2, .col1of3, .col2of3, .col1of4, .col2of4, .col3of4, .col1of5, .col2of5, .col3of5, .col4of5, .col1of6, .col2of6, .col3of6, .col4of6, .col5of6 { float: left; }
+
+.col1of2 { width: 50%; box-sizing: border-box; }
+
+.col1of3 { width: 33.33333%; box-sizing: border-box; }
+
+.col2of3 { width: 66.66667%; box-sizing: border-box; }
+
+.col1of4 { width: 25%; box-sizing: border-box; }
+
+.col2of4 { width: 50%; box-sizing: border-box; }
+
+.col3of4 { width: 75%; box-sizing: border-box; }
+
+.col1of5 { width: 20%; box-sizing: border-box; }
+
+.col2of5 { width: 40%; box-sizing: border-box; }
+
+.col3of5 { width: 60%; box-sizing: border-box; }
+
+.col4of5 { width: 80%; box-sizing: border-box; }
+
+.col1of6 { width: 16.66667%; box-sizing: border-box; }
+
+.col2of6 { width: 33.33333%; box-sizing: border-box; }
+
+.col3of6 { width: 50%; box-sizing: border-box; }
+
+.col4of6 { width: 66.66667%; box-sizing: border-box; }
+
+.col5of6 { width: 83.33333%; box-sizing: border-box; }
+
+.row { width: 100%; position: relative; box-sizing: border-box; margin-left: auto; margin-right: auto; }
+.row:before, .row:after { content: " "; display: table; clear: both; }
+
+.left { float: left; }
+
+.right { float: right; }
+
+.center { margin-left: auto; margin-right: auto; float: none; }
+
+.hide { display: none; }
+
+.hidden { visibility: hidden; }
+
+.by-left { text-align: left; }
+
+.by-right { text-align: right; }
+
+.by-center { text-align: center; }
+
+.flex { display: -webkit-box !important; display: -webkit-flex !important; display: flex !important; }
+
+.vflex { display: -webkit-box !important; display: -webkit-flex !important; display: flex !important; -webkit-flex-direction: column; flex-direction: column; -webkit-box-orient: vertical; box-orient: vertical; }
+
+.vcenter { display: -webkit-box; display: -webkit-flex; display: flex; -webkit-box-align: center; -webkit-align-items: center; align-items: center; }
+
+.hcenter { display: -webkit-box; display: -webkit-flex; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; justify-content: center; }
+
+.acenter { display: -webkit-box; display: -webkit-flex; display: flex; -webkit-box-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; justify-content: center; }
+
+.flex0 { -webkit-box-flex: 0; -webkit-flex: 0; flex: 0; }
+
+.flex1 { -webkit-box-flex: 1; -webkit-flex: 1; flex: 1; }
+
+.flex2 { -webkit-box-flex: 2; -webkit-flex: 2; flex: 2; }
+
+.flex3 { -webkit-box-flex: 3; -webkit-flex: 3; flex: 3; }
+
+.flex4 { -webkit-box-flex: 4; -webkit-flex: 4; flex: 4; }
+
+.flex5 { -webkit-box-flex: 5; -webkit-flex: 5; flex: 5; }
+
+.flex6 { -webkit-box-flex: 6; -webkit-flex: 6; flex: 6; }
+
+/** Should be used to modify the default spacing between objects (not between nodes of the same object) a, t, r, b, l, h, v = all,top,right,bottom,left,horizontal,vertical x, s, m, l, n       = space-x, space-s, space-m, space-l, none p, m                = padding,margin */
+.ptx, .pvx, .pax { padding-top: 10px !important; }
+
+.pts, .pvs, .pas { padding-top: 12px !important; }
+
+.ptm, .pvm, .pam { padding-top: 15px !important; }
+
+.ptl, .pvl, .pal { padding-top: 20px !important; }
+
+.prx, .phx, .pax { padding-right: 10px !important; }
+
+.prs, .phs, .pas { padding-right: 12px !important; }
+
+.prm, .phm, .pam { padding-right: 15px !important; }
+
+.prl, .phl, .pal { padding-right: 20px !important; }
+
+.pbx, .pvx, .pax { padding-bottom: 10px !important; }
+
+.pbs, .pvs, .pas { padding-bottom: 12px !important; }
+
+.pbm, .pvm, .pam { padding-bottom: 15px !important; }
+
+.pbl, .pvl, .pal { padding-bottom: 20px !important; }
+
+.plx, .phx, .pax { padding-left: 10px !important; }
+
+.pls, .phs, .pas { padding-left: 12px !important; }
+
+.plm, .phm, .pam { padding-left: 15px !important; }
+
+.pll, .phl, .pal { padding-left: 20px !important; }
+
+.mtx, .mvx, .max { margin-top: 10px !important; }
+
+.mts, .mvs, .mas { margin-top: 12px !important; }
+
+.mtm, .mvm, .mam { margin-top: 15px; }
+
+.mtl, .mvl, .mal { margin-top: 20px !important; }
+
+.mrx, .mhx, .max { margin-right: 10px !important; }
+
+.mrs, .mhs, .mas { margin-right: 12px !important; }
+
+.mrm, .mhm, .mam { margin-right: 15px !important; }
+
+.mrl, .mhl, .mal { margin-right: 20px !important; }
+
+.mbx, .mvx, .max { margin-bottom: 10px !important; }
+
+.mbs, .mvs, .mas { margin-bottom: 12px !important; }
+
+.mbm, .mvm, .mam { margin-bottom: 15px !important; }
+
+.mbl, .mvl, .mal { margin-bottom: 20px !important; }
+
+.mlx, .mhx, .max { margin-left: 10px !important; }
+
+.mls, .mhs, .mas { margin-left: 12px !important; }
+
+.mlm, .mhm, .mam { margin-left: 15px !important; }
+
+.mll, .mhl, .mal { margin-left: 20px !important; }
+
+.ptn, .pvn, .pan { padding-top: 0 !important; }
+
+.pln, .phn, .pan { padding-left: 0 !important; }
+
+.prn, .phn, .pan { padding-right: 0 !important; }
+
+.pbn, .pvn, .pan { padding-bottom: 0 !important; }
+
+.mtn, .mvn, .man { margin-top: 0 !important; }
+
+.mrn, .mhn, .man { margin-right: 0 !important; }
+
+.mbn, .mvn, .man { margin-bottom: 0 !important; }
+
+.mln, .mhn, .man { margin-left: 0 !important; }
+
+.h0 { font-size: 15px !important; }
+
+h1, .h1 { font-size: 18px !important; }
+
+h1 { margin-bottom: .5em; }
+
+h2, .h2 { font-size: 16px !important; }
+
+h2 { margin-bottom: .5em; }
+
+h3, .h3 { font-size: 15px !important; }
+
+h3 { margin-bottom: .5em; }
+
+h4, .h4 { font-size: 14px !important; }
+
+h4 { margin-bottom: .5em; }
+
+h5, .h5 { font-size: 13px !important; }
+
+h5 { margin-bottom: .5em; }
+
+h6, .h6 { font-size: 12px !important; }
+
+h6 { margin-bottom: .5em; }
+
+.word { color: #363636; }
+
+.bg-word { background-color: #363636; }
+
+.opaque { color: #666; }
+
+.bg-opaque { background-color: #666; }
+
+.neutral { color: #999; }
+
+.bg-neutral { background-color: #999; }
+
+.pale { color: #efeff4; }
+
+.bg-pale { background-color: #efeff4; }
+
+.bare { color: #f6f6f6; }
+
+.bg-bare { background-color: #f6f6f6; }
+
+.firm { color: #049ff1; }
+
+.bg-firm { background-color: #049ff1; }
+
+.bright { color: #fe9d01; }
+
+.bg-bright { background-color: #fe9d01; }
+
+.sharp { color: #0cf; }
+
+.bg-sharp { background-color: #0cf; }
+
+.contrast { color: #fff; }
+
+.bg-contrast { background-color: #fff; }
+
+.positive { color: #43a102; }
+
+.bg-positive { background-color: #43a102; }
+
+.negative { color: #FF2B00; }
+
+.bg-negative { background-color: #FF2B00; }
+
+.black { color: black; }
+
+.bg-black { background-color: black; }
+
+.blue { color: #4385f6; }
+
+.bg-blue { background-color: #4385f6; }
+
+.gray { color: #bdc3c7; }
+
+.bg-gray { background-color: #bdc3c7; }
+
+.green { color: #38bb4a; }
+
+.bg-green { background-color: #38bb4a; }
+
+.orange { color: orange; }
+
+.bg-orange { background-color: orange; }
+
+.red { color: #df6448; }
+
+.bg-red { background-color: #df6448; }
+
+.white { color: white; }
+
+.bg-white { background-color: white; }
+
+.yellow { color: #ffa200; }
+
+.bg-yellow { background-color: #ffa200; }
+
+.error { color: #e66351; }
+
+.bg-error { background-color: #e66351; }
+
+.forceful { color: #363636; }
+
+.bg-forceful { background-color: #363636; }
+
+.strong { color: #484848; }
+
+.bg-strong { background-color: #484848; }
+
+.powerful { color: #565656; }
+
+.bg-powerful { background-color: #565656; }
+
+.dusky { color: #898989; }
+
+.bg-dusky { background-color: #898989; }
+
+.pale { color: #b1b1b1; }
+
+.bg-pale { background-color: #b1b1b1; }
+
+a { color: #196FEE; text-decoration: none; }
+
+.border-box { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.closed-box { overflow: hidden; position: relative; }
+.closed-box:before, .closed-box:after { content: " "; display: table; clear: both; }
+
+.hide { display: none !important; }
+
+.ios-scroll { overflow-y: scroll; -webkit-overflow-scrolling: touch; }
+
+.noscroll { overflow: hidden !important; box-sizing: border-box !important; height: 100% !important; }
+
+.notap { -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
+
+.nocall { -webkit-touch-callout: none; }
+
+.noselect { -webkit-user-select: none; user-select: none; }
+
+.nopointer { pointer-events: none; }
+
+.relative { position: relative; }
+
+.block { display: block; }
+
+.inline-block { display: inline-block; }
+
+.inline { display: inline; }
+
+.text-overflow { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.block { display: block; }
+
+.inline { display: inline; }
+
+.inline-block { display: inline-block; }
