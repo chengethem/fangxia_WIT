@@ -288,14 +288,44 @@ a { color: #196FEE; text-decoration: none; }
 
 .inline-block { display: inline-block; }
 
-.hide { display: none; }
+.banner { position: fixed; left: 0; top: 0; width: 100%; height: 100%; }
+.banner .swiper-slide { background-size: 100%; background-position: center; background-repeat: no-repeat; background-color: #000; position: relative; }
+.banner .swiper-slide .title { position: absolute; left: 20px; bottom: 40px; color: #fff; font-size: 20px; }
 
-html, body { height: 100%; }
+.swiper-container { width: 100%; height: 100%; }
 
-body { background: #fff; height: 100%; width: 100%; background-image: url("http://oezn2ph4e.bkt.clouddn.com/456x.jpg"); background-repeat: no-repeat; background-size: 100%; }
+.header { height: 90px; position: relative; z-index: 10; }
+.header .nav { float: right; margin-top: 40px; font-size: 15px; padding-bottom: 3px; padding-right: 3em; padding-left: 1em; }
+.header .nav__item { float: left; padding-right: 4em; cursor: default; position: relative; }
+.header .nav__item:hover .nav__sublist { display: block; }
+.header .nav__sublist { display: none; position: absolute; top: 0; left: 0; padding-top: 1.6em; }
+.header .nav__subitem { margin-top: 1em; }
+.header .lang { position: absolute; right: 1em; top: 1em; font-size: 14px; }
 
-.header { height: 90px; background-color: rgba(0, 0, 0, 0.3); color: #fff; position: relative; }
+.header-darker { background-color: rgba(0, 0, 0, 0.6); color: #fff; }
+.header-darker .nav { border-bottom: 1px solid #fff; }
+.header-darker .nav__subitem { color: #fff; }
+.header-darker .nav__subitem--a { color: #fff; }
+.header-darker .lang { color: rgba(255, 255, 255, 0.6); }
 
-.nav { float: right; margin-top: 40px; font-size: 15px; padding-bottom: 3px; border-bottom: 1px solid #fff; }
+.header-brighter { color: #000; }
+.header-brighter .nav { border-bottom: 1px solid #000; }
+.header-brighter .nav__subitem { color: #000; }
+.header-brighter .nav__subitem--a { color: #000; }
+.header-brighter .lang { color: rgba(0, 0, 0, 0.6); }
 
-.lang { position: absolute; right: 10px; top: 20px; }
+.picItem__list { width: 1170px; margin: 0 auto; overflow: auto; }
+
+.picItem__item { float: left; display: inline-block; margin: 35px 10px; position: relative; }
+
+.picItem__title { margin-top: 20px; font-size: 14px; color: #333; }
+
+.picItem__picWraper { position: relative; }
+
+.picItem__item:hover .picItem__pic--title-hover { display: block; }
+
+.picItem__pic--title-hover { color: #fff; display: none; position: absolute; left: 50%; top: 50%; }
+
+.picItem__pic { width: 565px; height: 425px; }
+
+.picItem__link--fake { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }

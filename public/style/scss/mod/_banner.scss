@@ -1,0 +1,22 @@
+.banner{
+  @include pos(left, 0, top, 0,fixed);
+  width:100%;
+  height:100%;
+  .swiper-slide{
+    background-size:100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-color:#000;
+    position:relative;
+    .title{
+      @include pos(left,20px,bottom,40px);
+      color:#fff;
+      font-size:20px;
+    }
+  }
+}
+
+.swiper-container{
+  width:100%;
+  height:100%;
+}

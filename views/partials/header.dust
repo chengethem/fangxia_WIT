@@ -1,0 +1,18 @@
+<div class="header {style}">
+  <div class="logo">logo</div>
+  <div class="nav">
+    <ul class="nav__list">
+      {#nav}
+        <li class="nav__item">
+          <div class="nav__item--title">{title}</div>
+          <ul class="nav__sublist">
+            {#links}
+              <li class="nav__subitem"><a class="nav__subitem--a" href="{url}">{title}</a></li>
+            {/links}
+          </ul>
+        </li>
+      {/nav}
+    </ul>
+  </div>
+  <a class="lang" href="?en">EN</a>
+</div>

@@ -1,35 +1,49 @@
 @import "normal/scaffy/bundle.scss";
+@import "mod/banner";
+@import "mod/header";
 
-.hide{
-  display:none;
+.picItem__list{
+  width:1170px;
+  margin:0 auto;
+  overflow:auto;
 }
-html,body{
-  height:100%;
-}
-body{
-  background:#fff;
-  height:100%;
-  width:100%;
-  background-image:url('http://oezn2ph4e.bkt.clouddn.com/456x.jpg');
-  background-repeat:no-repeat;
-  background-size:100%;
-}
-.header{
-  height:90px;
-  background-color:rgba(#000,.3);
-  color:#fff;
+
+.picItem__item{
+  float:left;
+  display:inline-block;
+  margin:35px 10px;
   position:relative;
 }
-.logo{
 
+.picItem__title{
+  margin-top:20px;
+  font-size:14px;
+  color:#333;
 }
-.nav{
-  float:right;
-  margin-top:40px;
-  font-size:15px;
-  padding-bottom:3px;
-  border-bottom:1px solid #fff;
+
+.picItem__picWraper{
+  position:relative;
 }
-.lang{
-  @include pos(right,10px,top,20px);
+
+.picItem__item:hover{
+  .picItem__pic--title-hover{
+    display:block;
+  }
+}
+
+.picItem__pic--title-hover{
+  color:#fff;
+  display:none;
+  @include pos(left, 50%, top, 50%);
+}
+
+.picItem__pic{
+  width:565px;
+  height:425px;
+}
+
+.picItem__link--fake{
+  @include pos(left, 0, top, 0);
+  width:100%;
+  height:100%;
 }

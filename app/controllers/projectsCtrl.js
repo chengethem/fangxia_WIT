@@ -14,7 +14,7 @@ var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var banner = require('../../model/banner.json');
+var projects = require('../../model/projects.json');
 var nav = require('../../model/nav.json');
 
 exports.default = function () {
@@ -24,12 +24,12 @@ exports.default = function () {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            title = 'koa2 title';
+            title = '';
             _context.next = 3;
-            return ctx.render('index', {
+            return ctx.render('projects', {
               title: title,
               nav: nav,
-              banner: banner
+              projects: projects
             });
 
           case 3:
