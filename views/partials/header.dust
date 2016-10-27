@@ -1,13 +1,18 @@
-<div class="header {style}">
+<div class="header {style}" id="j_header" data-class="{style}">
+  <div class="header__mask j_header_mask"></div>
   <div class="logo">logo</div>
   <div class="nav">
     <ul class="nav__list">
       {#nav}
-        <li class="nav__item">
-          <div class="nav__item--title">{title}</div>
+        <li class="nav__item t_mask_hide">
+          {?url}
+            <a href="{url}" class="nav__link">{title}</a>
+          {:else}
+            <div class="nav__item--title t_mask_show">{title}</div>
+          {/url}
           <ul class="nav__sublist">
             {#links}
-              <li class="nav__subitem"><a class="nav__subitem--a" href="{url}">{title}</a></li>
+              <li class="nav__subitem"><a class="nav__link" href="{url}">{title}</a></li>
             {/links}
           </ul>
         </li>

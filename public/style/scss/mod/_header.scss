@@ -3,6 +3,22 @@
   position:relative;
   z-index:10;
 
+  .header__mask{
+    height:330px;
+    width:100%;
+    @include pos(left, 0, top, 0);
+    background-color:rgba(#000, .6);
+    opacity:0;
+    @include transition(400ms ease-in-out);
+    @include transform(translateY(-70%));
+    &.c_subnav{
+      opacity:1;
+      @include transform(translateY(0%));
+    }
+  }
+  &.header-darker .header__mask{
+    opacity:1; //todo
+  }
   .logo{
 
   }
@@ -46,17 +62,20 @@
 
 .header-darker{
   $word:#fff;
-  background-color:rgba(#000, .6);
+  //background-color:rgba(#000, .6);
   color:$word;
 
   .nav{
     border-bottom:1px solid $word;
   }
+  .nav__link{
+    color:$word;
+    &:hover{
+      color:darken($word, 20%);
+    }
+  }
 
   .nav__subitem{
-    color:$word;
-  }
-  .nav__subitem--a{
     color:$word;
   }
 
@@ -72,11 +91,13 @@
   .nav{
     border-bottom:1px solid $word;
   }
-
-  .nav__subitem{
+  .nav__link{
     color:$word;
+    &:hover{
+      color:lighten($word, 50%);
+    }
   }
-  .nav__subitem--a{
+  .nav__subitem{
     color:$word;
   }
 

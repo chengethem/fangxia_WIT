@@ -84,7 +84,7 @@ app.use((0, _koaViews2.default)(_path2.default.join(__dirname, '../views'), {
 
 // 500 error
 // koaOnError(app, {
-//   template: 'views/500.ejs',
+//   template: 'views/500.ejs'
 // });
 
 // logger

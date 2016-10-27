@@ -1,0 +1,33 @@
+{<css}
+  <link rel="stylesheet" href="/swiper/swiper.min.css" />
+{/css}
+{> "views/layout.dust" /}
+{<content}
+  {> "views/partials/header.dust" style="header-brighter" /}
+  <div class="picSwiper">
+    <div class="swiper-wrapper">
+      {#project.pics}
+        <div class="swiper-slide" style="background-image:url({url});">
+          <div class="title">{desc}</div>
+        </div>
+      {/project.pics}
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+{/content}
+{<js}
+  <script src="/swiper/swiper.js"></script>
+  <script>
+    var swiper = new Swiper('.picSwiper', {
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+      spaceBetween: 10,
+      autoplay: '6400',
+      speed: 1000
+    });
+  </script>
+{/js}

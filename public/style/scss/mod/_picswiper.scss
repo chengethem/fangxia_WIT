@@ -1,0 +1,11 @@
+.picSwiper{
+  height:calc(100% - 90px);
+  width:100%;
+  overflow:hidden;
+  .swiper-slide{
+    width:100%;
+    background-position:center;
+    background-size:100%;
+    background-repeat:no-repeat;
+  }
+}

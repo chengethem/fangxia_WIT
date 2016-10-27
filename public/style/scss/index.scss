@@ -1,49 +1,7 @@
 @import "normal/scaffy/bundle.scss";
+@import "mod/base";
 @import "mod/banner";
 @import "mod/header";
-
-.picItem__list{
-  width:1170px;
-  margin:0 auto;
-  overflow:auto;
-}
-
-.picItem__item{
-  float:left;
-  display:inline-block;
-  margin:35px 10px;
-  position:relative;
-}
-
-.picItem__title{
-  margin-top:20px;
-  font-size:14px;
-  color:#333;
-}
-
-.picItem__picWraper{
-  position:relative;
-}
-
-.picItem__item:hover{
-  .picItem__pic--title-hover{
-    display:block;
-  }
-}
-
-.picItem__pic--title-hover{
-  color:#fff;
-  display:none;
-  @include pos(left, 50%, top, 50%);
-}
-
-.picItem__pic{
-  width:565px;
-  height:425px;
-}
-
-.picItem__link--fake{
-  @include pos(left, 0, top, 0);
-  width:100%;
-  height:100%;
-}
+@import "mod/piclist";
+@import "mod/picswiper";
+@import "mod/founder";

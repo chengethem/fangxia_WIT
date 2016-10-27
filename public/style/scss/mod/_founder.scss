@@ -1,0 +1,44 @@
+.founders{
+  width:90%;
+  margin:0 auto;
+  padding-top:65px;
+}
+
+.founder{
+  overflow:hidden;
+  margin-bottom:140px;
+}
+.founder__photo{
+  float:left;
+  width:315px;
+  height:420px;
+  margin-right:40px;
+}
+
+.founder__title{
+  margin-bottom:50px;
+}
+
+.founder__name{
+  font-size:40px;
+}
+
+.founder__name, .founder__job{
+  display:inline-block;
+  vertical-align:middle;
+}
+
+.founder__job{
+  margin-left:30px;
+  font-size:20px;
+}
+
+.founder__desc, .founder__works{
+  white-space:pre-wrap;
+  font-size:14px;
+  line-height:1.6em;
+}
+
+.founder__works{
+  margin-top:40px;
+}

@@ -16,11 +16,21 @@ var _projectsCtrl = require('../controllers/projectsCtrl');
 
 var _projectsCtrl2 = _interopRequireDefault(_projectsCtrl);
 
+var _projectCtrl = require('../controllers/projectCtrl');
+
+var _projectCtrl2 = _interopRequireDefault(_projectCtrl);
+
+var _founderCtrl = require('../controllers/founderCtrl');
+
+var _founderCtrl2 = _interopRequireDefault(_founderCtrl);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var router = (0, _koaRouter2.default)();
 
 router.get('/', _indexCtrl2.default);
 router.get('/projects', _projectsCtrl2.default);
+router.get('/project/:id', _projectCtrl2.default);
+router.get('/founder', _founderCtrl2.default);
 
 exports.default = router;

@@ -1,5 +1,4 @@
 {<css}
-  <link rel="stylesheet" href="swiper/swiper.min.css" />
 {/css}
 {> "views/layout.dust" /}
 {<content}
@@ -8,11 +7,11 @@
     {#projects}
       <li class="picItem__item">
         <div class="picItem__picWraper">
-          <img class="picItem__pic" src="{pic}" alt="{title} 图片" />
+          <img class="picItem__pic" src="{pics[0].url}" alt="{title} 图片" />
           <div class="picItem__pic--title-hover">浏览更多</div>
         </div>
         <div class="picItem__title">{title}</div>
-        <a href="{url}" class="picItem__link--fake item-a"></a>
+        <a href="/project/{$idx}" class="picItem__link--fake item-a"></a>
       </li>
     {/projects}
   </ul>
