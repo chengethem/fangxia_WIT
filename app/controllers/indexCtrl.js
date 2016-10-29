@@ -14,7 +14,7 @@ var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var banner = require('../../model/banner.json');
+var projects = require('../../model/projects.json');
 var nav = require('../../model/nav.json');
 
 exports.default = function () {
@@ -29,7 +29,7 @@ exports.default = function () {
             return ctx.render('index', {
               title: title,
               nav: nav,
-              banner: banner
+              projects: projects
             });
 
           case 3:

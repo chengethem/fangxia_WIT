@@ -306,7 +306,7 @@ body { background: #fff; height: 100%; width: 100%; }
 .header .header__mask { height: 330px; width: 100%; z-index: 1; position: absolute; left: 0; top: 0; background-color: rgba(0, 0, 0, 0.6); opacity: 0; -moz-transition: ease-in-out 400ms; -o-transition: ease-in-out 400ms; -webkit-transition: ease-in-out 400ms; transition: ease-in-out 400ms; -moz-transform: translateY(-73%); -ms-transform: translateY(-73%); -webkit-transform: translateY(-73%); transform: translateY(-73%); }
 .header .header__mask.c_subnav { opacity: 1; -moz-transform: translateY(0%); -ms-transform: translateY(0%); -webkit-transform: translateY(0%); transform: translateY(0%); }
 .header.header-darker .header__mask { opacity: 1; }
-.header .nav { float: right; margin-top: 40px; font-size: 15px; padding-bottom: 3px; padding-right: 3em; padding-left: 1em; z-index: 2; position: relative; }
+.header .nav { float: right; margin-top: 40px; font-size: 15px; padding-bottom: 10px; padding-right: 3em; padding-left: 1em; z-index: 2; position: relative; }
 .header .nav__item { float: left; padding-right: 4em; cursor: default; position: relative; }
 .header .nav__item:hover .nav__sublist { display: block; }
 .header .nav__sublist { display: none; position: absolute; top: 0; left: 0; padding-top: 1.6em; }

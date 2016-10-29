@@ -7,11 +7,11 @@
   <div class="banner">
     <div class="swiper-container">
       <div class="swiper-wrapper">
-        {#banner}
-          <div class="swiper-slide" style="background-image:url({url})">
+        {#projects}
+          <div class="swiper-slide" style="background-image:url({pics[0].url})">
             <div class="title">{title}</div>
           </div>
-        {/banner}
+        {/projects}
       </div>
       {!<div class="swiper-pagination"></div>!}
     </div>
