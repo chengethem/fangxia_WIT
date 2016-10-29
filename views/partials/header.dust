@@ -1,6 +1,6 @@
 <div class="header {style}" id="j_header" data-class="{style}">
   <div class="header__mask j_header_mask"></div>
-  <div class="logo">logo</div>
+  <a class="logo logo-{logostyle}" href="/"></a>
   <div class="nav">
     <ul class="nav__list">
       {#nav}

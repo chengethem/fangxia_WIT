@@ -3,7 +3,7 @@
 {/css}
 {> "views/layout.dust" /}
 {<content}
-  {> "views/partials/header.dust" style="header-brighter" /}
+  {> "views/partials/header.dust" logostyle="dark" style="header-brighter" /}
   <div class="founders">
     {#founders}
       <div class="founder">

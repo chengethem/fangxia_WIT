@@ -3,24 +3,37 @@
   position:relative;
   z-index:10;
 
+  .logo{
+    width:image-width('logo.png')/2;
+    height:image-height('logo.png')/2;
+    display:inline-block;
+    z-index:2;
+    position:relative;
+    @include pos(left, 20px, top, 50%);
+    @include transform(translateY(-50%));
+    background-image:url('/images/logo.png');
+    background-size:100%;
+    background-repeat:no-repeat;
+  }
+  .logo-dark{
+    background-image:url('/images/darklogo.png');
+  }
   .header__mask{
     height:330px;
     width:100%;
+    z-index:1;
     @include pos(left, 0, top, 0);
     background-color:rgba(#000, .6);
     opacity:0;
     @include transition(400ms ease-in-out);
-    @include transform(translateY(-70%));
+    @include transform(translateY(-73%));
     &.c_subnav{
       opacity:1;
       @include transform(translateY(0%));
     }
   }
   &.header-darker .header__mask{
-    opacity:1; //todo
-  }
-  .logo{
-
+    opacity:1;
   }
 
   .nav{
@@ -30,6 +43,8 @@
     padding-bottom:3px;
     padding-right:3em;
     padding-left:1em;
+    z-index:2;
+    position:relative;
   }
 
   .nav__item{
