@@ -8,10 +8,10 @@
     <div class="swiper-wrapper">
       {#project.pics}
         <div class="swiper-slide" style="background-image:url({url});">
-          <div class="title">{desc}</div>
         </div>
       {/project.pics}
     </div>
+    <div class="title">{project.title}</div>
     <div class="swiper-pagination"></div>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
@@ -27,7 +27,8 @@
       prevButton: '.swiper-button-prev',
       spaceBetween: 10,
       autoplay: '6400',
-      speed: 1000
+      speed: 600,
+      loop: true
     });
   </script>
 {/js}

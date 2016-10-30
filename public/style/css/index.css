@@ -295,7 +295,7 @@ html, body { height: 100%; }
 body { background: #fff; height: 100%; width: 100%; }
 
 .banner { position: fixed; left: 0; top: 0; width: 100%; height: 100%; }
-.banner .swiper-slide { background-size: 100%; background-position: center; background-repeat: no-repeat; background-color: #000; position: relative; }
+.banner .swiper-slide { background-size: auto 100%; background-position: center; background-repeat: no-repeat; background-color: #000; position: relative; }
 .banner .swiper-slide .title { position: absolute; left: 20px; bottom: 40px; color: #fff; font-size: 20px; }
 
 .swiper-container { width: 100%; height: 100%; }
@@ -335,16 +335,23 @@ body { background: #fff; height: 100%; width: 100%; }
 
 .picItem__picWraper { position: relative; }
 
-.picItem__item:hover .picItem__pic--title-hover { display: block; }
+.picItem__item:hover .picItem__pic--title-hover { opacity: 1; }
 
-.picItem__pic--title-hover { color: #fff; display: none; position: absolute; left: 50%; top: 50%; }
+.picItem__pic--title-hover { color: #fff; opacity: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.4); position: absolute; left: 0; top: 0; background-image: url("/images/view.png"); background-repeat: no-repeat; background-size: 60% auto; background-position: center; -moz-transition: opacity 400ms; -o-transition: opacity 400ms; -webkit-transition: opacity 400ms; transition: opacity 400ms; }
 
-.picItem__pic { width: 565px; height: 425px; }
+.picItem__pic { width: 370px; height: 278px; }
 
 .picItem__link--fake { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
 
-.picSwiper { height: calc(100% - 90px); width: 100%; overflow: hidden; }
-.picSwiper .swiper-slide { width: 100%; background-position: center; background-size: 100%; background-repeat: no-repeat; }
+.picSwiper { height: calc(100% - 90px); background-color: #595959; width: 100%; overflow: hidden; }
+.picSwiper .title { position: absolute; left: 24px; bottom: 19px; font-size: 14px; color: #fff; z-index: 1; }
+.picSwiper .swiper-slide { width: 100%; background-position: center; background-size: auto 100%; background-repeat: no-repeat; }
+.picSwiper .swiper-button-prev, .picSwiper .swiper-button-next { width: 47px; height: 200px; background-size: 50% auto; top: 40%; }
+.picSwiper .swiper-button-prev { background-image: url("/images/left_arrow.png"); }
+.picSwiper .swiper-button-next { background-image: url("/images/right_arrow.png"); }
+.picSwiper .swiper-pagination-bullet { background-color: #fff; }
+.picSwiper .swiper-pagination-bullet-active { background-color: #fff; }
+.picSwiper.swiper-container-horizontal > .swiper-pagination-bullets { text-align: right; right: 40px; left: auto; }
 
 .founders { width: 90%; margin: 0 auto; padding-top: 65px; }
 

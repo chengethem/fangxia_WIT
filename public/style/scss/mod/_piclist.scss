@@ -23,19 +23,29 @@
 
 .picItem__item:hover{
   .picItem__pic--title-hover{
-    display:block;
+    opacity:1;
   }
 }
 
 .picItem__pic--title-hover{
   color:#fff;
-  display:none;
-  @include pos(left, 50%, top, 50%);
+  opacity:0;
+  width:100%;
+  height:100%;
+  background-color:rgba(#000, .4);
+  @include pos(left, 0, top, 0);
+  background-image:url('/images/view.png');
+  background-repeat:no-repeat;
+  background-size:60% auto;
+  background-position:center;
+  @include transition(opacity 400ms);
 }
 
 .picItem__pic{
-  width:565px;
-  height:425px;
+  //width:565px;
+  width:370px;
+  //height:425px;
+  height:278px;
 }
 
 .picItem__link--fake{

@@ -1,11 +1,42 @@
 .picSwiper{
   height:calc(100% - 90px);
+  background-color:#595959;
   width:100%;
   overflow:hidden;
+  .title{
+    @include pos(left,24px,bottom,19px);
+    font-size:14px;
+    color:#fff;
+    z-index:1;
+  }
   .swiper-slide{
     width:100%;
     background-position:center;
-    background-size:100%;
+    background-size:auto 100%;
     background-repeat:no-repeat;
   }
+  .swiper-button-prev, .swiper-button-next{
+    width:image-width('left_arrow.png');
+    height:image-height('left_arrow.png');
+    background-size:50% auto;
+    top:40%;
+  }
+  .swiper-button-prev{
+    background-image:url('/images/left_arrow.png');
+  }
+  .swiper-button-next{
+    background-image:url('/images/right_arrow.png');
+  }
+  .swiper-pagination-bullet{
+    background-color:#fff;
+  }
+  .swiper-pagination-bullet-active{
+    background-color:#fff;
+  }
+  &.swiper-container-horizontal > .swiper-pagination-bullets{
+    text-align:right;
+    right:40px;
+    left:auto;
+  }
 }
+

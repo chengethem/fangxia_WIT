@@ -8,7 +8,7 @@
       <li class="picItem__item">
         <div class="picItem__picWraper">
           <img class="picItem__pic" src="{pics[0].url}" alt="{title} 图片" />
-          <div class="picItem__pic--title-hover">浏览更多</div>
+          <div class="picItem__pic--title-hover"></div>
         </div>
         <div class="picItem__title">{title}</div>
         <a href="/project/{$idx}" class="picItem__link--fake item-a"></a>
