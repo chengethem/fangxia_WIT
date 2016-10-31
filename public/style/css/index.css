@@ -294,6 +294,8 @@ html, body { height: 100%; }
 
 body { background: #fff; height: 100%; width: 100%; }
 
+.mask__border-white { position: fixed; left: 0; top: 0; width: 100%; height: 100%; border: 10px solid #fff; box-sizing: border-box; pointer-events: none; z-index: 100; }
+
 .banner { position: fixed; left: 0; top: 0; width: 100%; height: 100%; }
 .banner .swiper-slide { background-size: auto 100%; background-position: center; background-repeat: no-repeat; background-color: #000; position: relative; }
 .banner .swiper-slide .title { position: absolute; left: 20px; bottom: 40px; color: #fff; font-size: 20px; }
@@ -343,10 +345,10 @@ body { background: #fff; height: 100%; width: 100%; }
 
 .picItem__link--fake { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
 
-.picSwiper { height: calc(100% - 90px); background-color: #595959; width: 100%; overflow: hidden; }
+.picSwiper { height: calc(100% - 100px); background-color: #595959; width: 100%; overflow: hidden; position: relative; }
 .picSwiper .title { position: absolute; left: 24px; bottom: 19px; font-size: 14px; color: #fff; z-index: 1; }
 .picSwiper .swiper-slide { width: 100%; background-position: center; background-size: auto 100%; background-repeat: no-repeat; }
-.picSwiper .swiper-button-prev, .picSwiper .swiper-button-next { width: 47px; height: 200px; background-size: 50% auto; top: 40%; }
+.picSwiper .swiper-button-prev, .picSwiper .swiper-button-next { width: 47px; height: 200px; background-size: 50% auto; top: 54%; -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -webkit-transform: translateY(-50%); transform: translateY(-50%); }
 .picSwiper .swiper-button-prev { background-image: url("/images/left_arrow.png"); }
 .picSwiper .swiper-button-next { background-image: url("/images/right_arrow.png"); }
 .picSwiper .swiper-pagination-bullet { background-color: #fff; }

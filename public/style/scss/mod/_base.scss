@@ -11,3 +11,13 @@ body{
   height:100%;
   width:100%;
 }
+
+.mask__border-white{
+  @include pos(left, 0, top, 0, fixed);
+  width:100%;
+  height:100%;
+  border: 10px solid #fff;
+  box-sizing: border-box;
+  pointer-events:none;
+  z-index:100;
+}

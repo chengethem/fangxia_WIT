@@ -12,6 +12,7 @@
 </head>
 <body class="index">
   {+content /}
+<div class="mask__border-white"></div>
 <script src="/script/jquery-3.1.1.min.js"></script>
 <script src="/script/nav.js"></script>
   {+js /}
