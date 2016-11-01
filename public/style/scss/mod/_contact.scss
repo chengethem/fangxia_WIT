@@ -1,0 +1,24 @@
+.contract{
+  padding:80px 70px 10px;
+  overflow:hidden;
+}
+
+.contract__name{
+  font-size:20px;
+  margin-top:14px;
+  margin-bottom:28px;
+}
+.contract__addr,.contract__mail{
+  color:#555;
+}
+.contract__mail{
+  margin-top:8px;
+}
+.contract__content--left{
+  float:left;
+}
+
+.contract__map{
+  float:right;
+  width:image-width('map.jpg')/2;
+}
