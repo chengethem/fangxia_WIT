@@ -8,8 +8,8 @@
     <div class="swiper-container">
       <div class="swiper-wrapper">
         {#projects}
-          <div class="swiper-slide" style="background-image:url({pics[0].url})">
-            <div class="title">{title}</div>
+          <div class="swiper-slide" style="background-image:url({cover})">
+            <div class="title">{title}<span class="banner__entitle">{en_title}</span></div>
           </div>
         {/projects}
       </div>

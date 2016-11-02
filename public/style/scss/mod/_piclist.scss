@@ -48,6 +48,13 @@
   height:278px;
 }
 
+.picItem__subtitle{
+  font-size:11px;
+  position:relative;
+  top:1px;
+  left:1em;
+}
+
 .picItem__link--fake{
   @include pos(left, 0, top, 0);
   width:100%;
