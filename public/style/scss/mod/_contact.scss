@@ -1,24 +1,25 @@
-.contract{
+.contact{
   padding:80px 70px 10px;
   overflow:hidden;
 }
 
-.contract__name{
-  font-size:20px;
+.contact__name{
+  font-size:23px;
   margin-top:14px;
   margin-bottom:28px;
 }
-.contract__addr,.contract__mail{
+.contact__addr,.contact__mail{
   color:#555;
 }
-.contract__mail{
+.contact__mail{
   margin-top:8px;
 }
-.contract__content--left{
+.contact__content--left{
+  padding-top:30px;
   float:left;
 }
 
-.contract__map{
+.contact__map{
   float:right;
   width:image-width('map.jpg')/2;
 }

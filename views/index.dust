@@ -27,7 +27,7 @@
       prevButton: '.swiper-button-prev',
       spaceBetween: 30,
       effect: 'fade',
-      autoplay: '6400',
+      autoplay: '4500',
       speed: 2000
     });
   </script>

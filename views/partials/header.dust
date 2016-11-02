@@ -19,5 +19,5 @@
       {/nav}
     </ul>
   </div>
-  <a class="lang" href="?en">EN</a>
+  <a class="lang hide" href="?en">EN</a>
 </div>

@@ -26,8 +26,8 @@
       nextButton: '.swiper-button-next',
       prevButton: '.swiper-button-prev',
       spaceBetween: 10,
-      autoplay: '6400',
-      speed: 600,
+      autoplay: '8000',
+      speed: 1000,
       loop: true
     });
   </script>

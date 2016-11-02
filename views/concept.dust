@@ -1,0 +1,12 @@
+{<css}
+  <link rel="stylesheet" href="/swiper/swiper.min.css" />
+{/css}
+{> "views/layout.dust" /}
+{<content}
+  {> "views/partials/header.dust" logostyle="dark" style="header-brighter" /}
+  <div class="concept">
+    <div class="concept__image"><img src="/images/concept.jpg" alt="理念" /></div>
+  </div>
+{/content}
+{<js}
+{/js}

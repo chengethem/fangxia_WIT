@@ -11,9 +11,9 @@
     background-color:#000;
     position:relative;
     .title{
-      @include pos(left, 20px, bottom, 40px);
+      @include pos(left, 45px, bottom, 40px);
       color:#fff;
-      font-size:20px;
+      font-size:16px;
     }
   }
 }

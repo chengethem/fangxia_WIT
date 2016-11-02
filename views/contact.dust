@@ -4,16 +4,16 @@
 {> "views/layout.dust" /}
 {<content}
   {> "views/partials/header.dust" logostyle="dark" style="header-brighter" /}
-  <div class="contract">
-    <div class="contract__content--left">
-      <div class="contract__name">{contact.name}</div>
-      <div class="contract__addr">{contact.address}</div>
-      <div class="contract__mail">
+  <div class="contact">
+    <div class="contact__content--left">
+      <div class="contact__name">{contact.name}</div>
+      <div class="contact__addr">{contact.address}</div>
+      <div class="contact__mail">
         <span>邮箱 </span>
-        <a class="contract__mail--link" href="mailto:{contact.mail}">{contact.mail}</a>
+        <a class="contact__mail--link" href="mailto:{contact.mail}">{contact.mail}</a>
       </div>
     </div>
-    <div class="contract__map"><img src="{contact.map}" alt="地址" /></div>
+    <div class="contact__map"><img src="{contact.map}" alt="地址" /></div>
   </div>
 {/content}
 {<js}

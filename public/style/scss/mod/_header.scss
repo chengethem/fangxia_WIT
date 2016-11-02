@@ -4,12 +4,13 @@
   z-index:10;
 
   .logo{
-    width:image-width('logo.png')/2;
+    //width:image-width('logo.png')/2;
+    width:165px;
     height:image-height('logo.png')/2;
     display:inline-block;
     z-index:2;
     position:relative;
-    @include pos(left, 20px, top, 50%);
+    @include pos(left, 45px, top, 50%);
     @include transform(translateY(-50%));
     background-image:url('/images/logo.png');
     background-size:100%;
@@ -19,7 +20,7 @@
     background-image:url('/images/darklogo.png');
   }
   .header__mask{
-    height:330px;
+    height:290px;
     width:100%;
     z-index:1;
     @include pos(left, 0, top, 0);
@@ -45,6 +46,7 @@
     padding-left:1em;
     z-index:2;
     position:relative;
+    font-size:13px;
   }
 
   .nav__item{
