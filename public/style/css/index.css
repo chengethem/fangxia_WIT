@@ -373,11 +373,11 @@ body { background: #fff; height: 100%; width: 100%; }
 
 .founder__name, .founder__job { display: inline-block; vertical-align: middle; }
 
-.founder__job { margin-left: 30px; font-size: 20px; }
+.founder__job { margin-left: 30px; font-size: 20px; white-space: pre-wrap; line-height: 1.4em; }
 
 .founder__desc, .founder__works { white-space: pre-wrap; font-size: 14px; line-height: 1.6em; }
 
-.founder__works { margin-top: 40px; }
+.founder__works { margin-top: 40px; margin-left: 357px; }
 
 .contact { padding: 80px 70px 10px; overflow: hidden; }
 

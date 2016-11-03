@@ -7,7 +7,7 @@
   <div class="founders">
     {#founders}
       <div class="founder">
-        <div class="founder__photo"><img src="{photo}" alt="{name}" /></div>
+        <div class="founder__photo"><img src="{photo}" /></div>
         <div class="founder__title">
           <div class="founder__name">{name}</div>
           <div class="founder__job">{title}</div>
