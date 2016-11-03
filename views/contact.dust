@@ -12,6 +12,12 @@
         <span>邮箱 </span>
         <a class="contact__mail--link" href="mailto:{contact.mail}">{contact.mail}</a>
       </div>
+      <div class="en_title contact__name">
+        {contact.en_title}
+      </div>
+      <div class="en_desc">
+        {contact.en_desc}
+      </div>
     </div>
     <div class="contact__map"><img src="{contact.map}" alt="地址" /></div>
   </div>

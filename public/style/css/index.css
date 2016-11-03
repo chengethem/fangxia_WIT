@@ -391,4 +391,8 @@ body { background: #fff; height: 100%; width: 100%; }
 
 .contact__map { float: right; width: 685px; }
 
+.en_title { margin-top: 80px; }
+
+.en_desc { max-width: 325px; white-space: pre-line; color: #555; }
+
 .concept__image { width: 800px; margin: 0 auto; }
