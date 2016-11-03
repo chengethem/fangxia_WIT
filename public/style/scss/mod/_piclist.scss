@@ -55,6 +55,12 @@
   left:1em;
 }
 
+.picItem__note{
+  font-size:12px;
+  margin-top:6px;
+  color:#666;
+}
+
 .picItem__link--fake{
   @include pos(left, 0, top, 0);
   width:100%;

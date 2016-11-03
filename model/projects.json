@@ -1,5 +1,61 @@
 [
   {
+    "title": "北京远洋高端养老示范段",
+    "en_title":"Senior Living L’amore",
+    "cover":"http://og2a9q8o3.bkt.clouddn.com/%E8%BF%9C%E6%B4%8B%E5%B0%81%E9%9D%A2x.jpg",
+    "pics":[
+      {"url":"http://og2a9q8o3.bkt.clouddn.com/%E8%BF%9C%E6%B4%8B%E4%B8%80.jpeg"},
+      {"url":"http://og2a9q8o3.bkt.clouddn.com/%E8%BF%9C%E6%B4%8B2.jpeg"},
+      {"url":"http://og2a9q8o3.bkt.clouddn.com/%E8%BF%9C%E6%B4%8B3.jpeg"},
+      {"url":"http://og2a9q8o3.bkt.clouddn.com/%E8%BF%9C%E6%B4%8B4.jpg"},
+      {"url":"http://og2a9q8o3.bkt.clouddn.com/%E8%BF%9C%E6%B4%8B5%20.jpeg"}
+    ],
+    "note":["中标建造中"]
+  },
+  {
+    "title": "北京碧海方舟别墅",
+    "en_title": "Wu Mansion, Beijing",
+    "cover": "http://og033ddsn.bkt.clouddn.com/%E7%A2%A7%E6%B5%B7%E6%96%B9%E8%88%9F%E5%B0%81%E9%9D%A2.jpg",
+    "pics": [
+      {
+        "url": "http://og033ddsn.bkt.clouddn.com/%E7%A2%A7%E6%B5%B7%E6%96%B9%E8%88%9F04.jpg"
+      },
+      {
+        "url": "http://og033ddsn.bkt.clouddn.com/%E7%A2%A7%E6%B5%B7%E6%96%B9%E8%88%9F05.jpg"
+      },
+      {
+        "url": "http://og033ddsn.bkt.clouddn.com/%E7%A2%A7%E6%B5%B72.jpg"
+      },
+      {
+        "url": "http://og033ddsn.bkt.clouddn.com/%E7%A2%A7%E6%B5%B73.jpg"
+      },
+      {
+        "url": "http://og033ddsn.bkt.clouddn.com/%E7%A2%A7%E6%B5%B71.jpg"
+      }
+    ],
+    "note":["中标建造中"]
+  },
+  {
+    "title": "华致酒行体验店",
+    "en_title": "The NEW VATS, Beijing",
+    "cover": "http://ofzzk5lpw.bkt.clouddn.com/%E5%8D%8E%E8%87%B4%E5%B0%81%E9%9D%A2.jpg",
+    "pics": [
+      {
+        "url": "http://ofzzk5lpw.bkt.clouddn.com/%E5%8D%8E%E8%87%B48.jpg"
+      },
+      {
+        "url": "http://ofzzk5lpw.bkt.clouddn.com/%E5%8D%8E%E8%87%B402.jpg"
+      },
+      {
+        "url": "http://ofzzk5lpw.bkt.clouddn.com/%E5%8D%8E%E8%87%B43.jpg"
+      },
+      {
+        "url": "http://ofzzk5lpw.bkt.clouddn.com/%E5%8D%8E%E8%87%B401.jpg"
+      }
+    ],
+    "note":["国际荣誉 —— 作为主创之一在北京集美组完成"]
+  },
+  {
     "title": "上海万科第五园",
     "en_title": "Yushe, Shanghai",
     "cover": "http://ofzyurptp.bkt.clouddn.com/%E7%AC%AC%E4%BA%94%E5%9B%AD%E5%B0%81%E9%9D%A2.jpg",
@@ -23,195 +79,13 @@
         "url": "http://ofzyurptp.bkt.clouddn.com/%E7%AC%AC%E4%BA%94%E5%9B%AD12.jpg"
       },
       {
-        "url": "http://ofzyurptp.bkt.clouddn.com/%E7%AC%AC%E4%BA%94%E5%9B%AD13.jpg"
-      },
-      {
-        "url": "http://ofzyurptp.bkt.clouddn.com/%E7%AC%AC%E4%BA%94%E5%9B%AD6.jpg"
+        "url": "http://og03ako6q.bkt.clouddn.com/%E7%AC%AC%E4%BA%94%E5%9B%AD5.jpg"
       }
-    ]
+    ],
+    "notes":["国际荣誉 —— 作为主创在北京集美组完成"]
   },
   {
-    "title": "华致酒行体验店",
-    "en_title": "The NEW VATS, Beijing",
-    "cover": "http://ofzzk5lpw.bkt.clouddn.com/%E5%8D%8E%E8%87%B4%E5%B0%81%E9%9D%A2.jpg",
-    "pics": [
-      {
-        "url": "http://ofzzk5lpw.bkt.clouddn.com/%E5%8D%8E%E8%87%B48.jpg"
-      },
-      {
-        "url": "http://ofzzk5lpw.bkt.clouddn.com/%E5%8D%8E%E8%87%B402.jpg"
-      },
-      {
-        "url": "http://ofzzk5lpw.bkt.clouddn.com/%E5%8D%8E%E8%87%B43.jpg"
-      },
-      {
-        "url": "http://ofzzk5lpw.bkt.clouddn.com/%E5%8D%8E%E8%87%B49.jpg"
-      }
-    ]
-  },
-  {
-    "title": "深圳卓越维港",
-    "en_title": "Excellence Group’s real estate",
-    "cover": "http://ofzzb00w5.bkt.clouddn.com/%E5%88%AB%E5%A2%85%E7%AB%8B%E9%9D%A2%E5%B0%81%E9%9D%A2.jpg",
-    "pics": [
-      {
-        "url": "http://ofzzb00w5.bkt.clouddn.com/%E5%88%AB%E5%A2%85%E7%AB%8B%E9%9D%A2.jpg"
-      },
-      {
-        "url": "http://ofzzb00w5.bkt.clouddn.com/30%E7%BB%B4%E6%B8%AF%E5%8C%97%E5%8C%BA.jpg"
-      }
-    ]
-  },
-  {
-    "title": "北京碧海方舟别墅",
-    "en_title": "Wu Mansion, Beijing",
-    "cover": "http://og033ddsn.bkt.clouddn.com/%E7%A2%A7%E6%B5%B7%E6%96%B9%E8%88%9F%E5%B0%81%E9%9D%A2.jpg",
-    "pics": [
-      {
-        "url": "http://og033ddsn.bkt.clouddn.com/%E7%A2%A7%E6%B5%B7%E6%96%B9%E8%88%9F04.jpg"
-      },
-      {
-        "url": "http://og033ddsn.bkt.clouddn.com/%E7%A2%A7%E6%B5%B7%E6%96%B9%E8%88%9F05.jpg"
-      },
-      {
-        "url": "http://og033ddsn.bkt.clouddn.com/%E7%A2%A7%E6%B5%B72.jpg"
-      },
-      {
-        "url": "http://og033ddsn.bkt.clouddn.com/%E7%A2%A7%E6%B5%B73.jpg"
-      },
-      {
-        "url": "http://og033ddsn.bkt.clouddn.com/%E7%A2%A7%E6%B5%B71.jpg"
-      }
-    ]
-  },
-  {
-    "title": "万柳书院",
-    "en_title": "Wanliu, Beijing",
-    "cover": "http://og03sv0nf.bkt.clouddn.com/%E5%B0%81%E9%9D%A210.jpg",
-    "pics": [
-      {
-        "url": "http://og03sv0nf.bkt.clouddn.com/10.jpg"
-      },
-      {
-        "url": "http://og03sv0nf.bkt.clouddn.com/08.jpg"
-      },
-      {
-        "url": "http://og03sv0nf.bkt.clouddn.com/07.jpg"
-      },
-      {
-        "url": "http://og03sv0nf.bkt.clouddn.com/05-04.jpg"
-      },
-      {
-        "url": "http://og03sv0nf.bkt.clouddn.com/05-07a.jpg"
-      },
-      {
-        "url": "http://og03sv0nf.bkt.clouddn.com/033.jpg"
-      },
-      {
-        "url": "http://og03sv0nf.bkt.clouddn.com/004.jpg"
-      }
-    ]
-  },
-  {
-    "title": "上海佘山高尔夫贵宾厅",
-    "en_title": "Sheshan golf, Shanghai",
-    "cover": "http://og03ako6q.bkt.clouddn.com/%E4%BD%98%E5%B1%B1%E5%B0%81%E9%9D%A2.jpg",
-    "pics": [
-      {
-        "url": "http://og03ako6q.bkt.clouddn.com/%E4%BD%98%E5%B1%B11.jpg"
-      },
-      {
-        "url": "http://og03ako6q.bkt.clouddn.com/%E4%BD%98%E5%B1%B14.jpg"
-      },
-      {
-        "url": "http://og03ako6q.bkt.clouddn.com/%E4%BD%98%E5%B1%B12.jpg"
-      },
-      {
-        "url": "http://og03ako6q.bkt.clouddn.com/%E4%BD%98%E5%B1%B13.jpg"
-      },
-      {
-        "url": "http://og03ako6q.bkt.clouddn.com/%E4%BD%98%E5%B1%B13.jpg"
-      }
-    ]
-  },
-  {
-    "title": "盘古大观池公寓",
-    "en_title": " CHI’s Flat, Beijing",
-    "cover": "http://ofsttrt7n.bkt.clouddn.com/%E7%9B%98%E5%8F%A4x.jpg",
-    "pics": [
-      {
-        "url": "http://ofsttrt7n.bkt.clouddn.com/%E7%9B%98%E5%8F%A4%E5%A4%A7%E5%B0%81%E9%9D%A2.jpg"
-      }
-    ]
-  },
-  {
-    "title": "广州金叶子温泉度假酒店",
-    "en_title": "Pattra resort, Guangzhou",
-    "cover": "http://og04k5xg5.bkt.clouddn.com/%E9%87%91%E5%8F%B6%E5%AD%90%E5%B0%81%E9%9D%A2.jpg",
-    "pics": [
-      {
-        "url": "http://og04k5xg5.bkt.clouddn.com/%E9%87%91%E5%8F%B6%E5%AD%90%E5%B0%81%E9%9D%A2.jpg"
-      },
-      {
-        "url": "http://og04k5xg5.bkt.clouddn.com/%E9%87%91%E5%8F%B6%E5%AD%908.jpg"
-      },
-      {
-        "url": "http://og04k5xg5.bkt.clouddn.com/%E9%87%91%E5%8F%B6%E5%AD%905.jpg"
-      },
-      {
-        "url": "http://og04k5xg5.bkt.clouddn.com/%E9%87%91%E5%8F%B6%E5%AD%902.JPG"
-      },
-      {
-        "url": "http://og04k5xg5.bkt.clouddn.com/%E9%87%91%E5%8F%B6%E5%AD%901.JPG"
-      },
-      {
-        "url": "http://og04k5xg5.bkt.clouddn.com/%E9%87%91%E5%8F%B6%E5%AD%904.jpg"
-      },
-      {
-        "url": "http://og04k5xg5.bkt.clouddn.com/%E9%87%91%E5%8F%B6%E5%AD%903.jpg"
-      }
-    ]
-  },
-  {
-    "title": "普贤面馆",
-    "en_title": "Puxian, Beijing",
-    "cover": "http://og04hjnk3.bkt.clouddn.com/%E6%9C%B4%E8%B4%A4%E9%9D%A2%E9%A6%86%E5%B0%81%E9%9D%A2.jpg",
-    "pics": [
-      {
-        "url": "http://og04hjnk3.bkt.clouddn.com/%E6%9C%B4%E8%B4%A4%E9%9D%A2%E9%A6%8604.jpg"
-      },
-      {
-        "url": "http://og04hjnk3.bkt.clouddn.com/%E6%9C%B4%E8%B4%A4%E9%9D%A2%E9%A6%8607.jpg"
-      },
-      {
-        "url": "http://og04hjnk3.bkt.clouddn.com/%E6%9C%B4%E8%B4%A4%E9%9D%A2%E9%A6%8608.jpg"
-      },
-      {
-        "url": "http://og04hjnk3.bkt.clouddn.com/%E6%9C%B4%E8%B4%A4%E9%9D%A2%E9%A6%8603.jpg"
-      }
-    ]
-  },
-  {
-    "title": "德国家具展厅",
-    "en_title": "WALTER KNOLL Beijing",
-    "cover": "http://og04p0uhh.bkt.clouddn.com/a%E5%B0%81%E9%9D%A2.jpg",
-    "pics": [
-      {
-        "url": "http://og04p0uhh.bkt.clouddn.com/%E5%BE%B7%E5%9B%BD%E5%AE%B6%E5%85%B7%E5%B1%95%E5%8E%85-6.jpg"
-      },
-      {
-        "url": "http://og04p0uhh.bkt.clouddn.com/%E5%BE%B7%E5%9B%BD%E5%AE%B6%E5%85%B7%E5%B1%95%E5%8E%85-2.jpg"
-      },
-      {
-        "url": "http://og04p0uhh.bkt.clouddn.com/%E5%BE%B7%E5%9B%BD%E5%AE%B6%E5%85%B7%E5%B1%95%E5%8E%85-8.jpg"
-      },
-      {
-        "url": "http://og04p0uhh.bkt.clouddn.com/%E5%BE%B7%E5%9B%BD%E5%AE%B6%E5%85%B7%E5%B1%95%E5%8E%85-1.jpg"
-      }
-    ]
-  },
-  {
-    "title": "长沙第六都吴宅",
+    "title": "长沙第六都住宅",
     "en_title": "WU Mansion Changsha",
     "cover": "http://og053awnu.bkt.clouddn.com/%E5%B0%81%E9%9D%A2.jpg",
     "pics": [
@@ -243,5 +117,139 @@
         "url": "http://og053awnu.bkt.clouddn.com/9.jpg"
       }
     ]
+  },
+  {
+    "title": "深圳卓越维港",
+    "en_title": "Excellence Group’s real estate",
+    "cover": "http://ofzzb00w5.bkt.clouddn.com/%E5%88%AB%E5%A2%85%E7%AB%8B%E9%9D%A2%E5%B0%81%E9%9D%A2.jpg",
+    "pics": [
+      {
+        "url": "http://ofzzb00w5.bkt.clouddn.com/%E5%88%AB%E5%A2%85%E7%AB%8B%E9%9D%A2.jpg"
+      },
+      {
+        "url": "http://ofzzb00w5.bkt.clouddn.com/30%E7%BB%B4%E6%B8%AF%E5%8C%97%E5%8C%BA.jpg"
+      }
+    ],
+    "notes":["作为主创在北京集美组完成"]
+  },
+  {
+    "title": "万柳书院",
+    "en_title": "Wanliu, Beijing",
+    "cover": "http://og03sv0nf.bkt.clouddn.com/%E5%B0%81%E9%9D%A210.jpg",
+    "pics": [
+      {
+        "url": "http://og03sv0nf.bkt.clouddn.com/10.jpg"
+      },
+      {
+        "url": "http://og03sv0nf.bkt.clouddn.com/08.jpg"
+      },
+      {
+        "url": "http://og03sv0nf.bkt.clouddn.com/07.jpg"
+      },
+      {
+        "url": "http://og03sv0nf.bkt.clouddn.com/05-04.jpg"
+      },
+      {
+        "url": "http://og03sv0nf.bkt.clouddn.com/05-07a.jpg"
+      }
+    ],
+    "notes":["作为主创在北京集美组完成"]
+  },
+  {
+    "title": "上海佘山高尔夫贵宾厅",
+    "en_title": "Sheshan golf, Shanghai",
+    "cover": "http://og03ako6q.bkt.clouddn.com/%E4%BD%98%E5%B1%B1%E5%B0%81%E9%9D%A2.jpg",
+    "pics": [
+      {
+        "url": "http://og03ako6q.bkt.clouddn.com/%E4%BD%98%E5%B1%B11.jpg"
+      },
+      {
+        "url": "http://og03ako6q.bkt.clouddn.com/%E4%BD%98%E5%B1%B14.jpg"
+      },
+      {
+        "url": "http://og03ako6q.bkt.clouddn.com/%E4%BD%98%E5%B1%B12.jpg"
+      },
+      {
+        "url": "http://og03ako6q.bkt.clouddn.com/%E4%BD%98%E5%B1%B13.jpg"
+      }
+    ],
+    "notes":["国际荣誉 —— 作为主创在北京集美组完成"]
+  },
+  {
+    "title": "盘古大观池公寓",
+    "en_title": "CHI’S Mansion",
+    "cover": "http://ofsttrt7n.bkt.clouddn.com/%E7%9B%98%E5%8F%A4x.jpg",
+    "pics": [
+      {
+        "url": "http://ofsttrt7n.bkt.clouddn.com/%E7%9B%98%E5%8F%A4%E5%A4%A7%E5%B0%81%E9%9D%A2.jpg"
+      }
+    ],
+    "notes":["作为主创在北京集美组完成"]
+  },
+  {
+    "title": "广州金叶子温泉度假酒店",
+    "en_title": "Pattra resort, Guangzhou",
+    "cover": "http://og04k5xg5.bkt.clouddn.com/%E9%87%91%E5%8F%B6%E5%AD%90%E5%B0%81%E9%9D%A2.jpg",
+    "pics": [
+      {
+        "url": "http://og04k5xg5.bkt.clouddn.com/%E9%87%91%E5%8F%B6%E5%AD%90%E5%B0%81%E9%9D%A2.jpg"
+      },
+      {
+        "url": "http://og04k5xg5.bkt.clouddn.com/%E9%87%91%E5%8F%B6%E5%AD%908.jpg"
+      },
+      {
+        "url": "http://og04k5xg5.bkt.clouddn.com/%E9%87%91%E5%8F%B6%E5%AD%905.jpg"
+      },
+      {
+        "url": "http://og04k5xg5.bkt.clouddn.com/%E9%87%91%E5%8F%B6%E5%AD%902.JPG"
+      },
+      {
+        "url": "http://og04k5xg5.bkt.clouddn.com/%E9%87%91%E5%8F%B6%E5%AD%901.JPG"
+      },
+      {
+        "url": "http://og04k5xg5.bkt.clouddn.com/%E9%87%91%E5%8F%B6%E5%AD%904.jpg"
+      }
+    ],
+    "notes":["国内荣誉 —— 作为主创在北京集美组完成"]
+  },
+  {
+    "title": "朴贤面馆",
+    "en_title": "Puxian, Beijing",
+    "cover": "http://og04hjnk3.bkt.clouddn.com/%E6%9C%B4%E8%B4%A4%E9%9D%A2%E9%A6%86%E5%B0%81%E9%9D%A2.jpg",
+    "pics": [
+      {
+        "url": "http://og04hjnk3.bkt.clouddn.com/%E6%9C%B4%E8%B4%A4%E9%9D%A2%E9%A6%8604.jpg"
+      },
+      {
+        "url": "http://og04hjnk3.bkt.clouddn.com/%E6%9C%B4%E8%B4%A4%E9%9D%A2%E9%A6%8607.jpg"
+      },
+      {
+        "url": "http://og04hjnk3.bkt.clouddn.com/%E6%9C%B4%E8%B4%A4%E9%9D%A2%E9%A6%8608.jpg"
+      },
+      {
+        "url": "http://og04hjnk3.bkt.clouddn.com/%E6%9C%B4%E8%B4%A4%E9%9D%A2%E9%A6%8603.jpg"
+      }
+    ],
+    "notes":["作为主创在北京集美组完成"]
+  },
+  {
+    "title": "德国家具展厅",
+    "en_title": "WALTER KNOLL Beijing",
+    "cover": "http://og04p0uhh.bkt.clouddn.com/a%E5%B0%81%E9%9D%A2.jpg",
+    "pics": [
+      {
+        "url": "http://og04p0uhh.bkt.clouddn.com/%E5%BE%B7%E5%9B%BD%E5%AE%B6%E5%85%B7%E5%B1%95%E5%8E%85-6.jpg"
+      },
+      {
+        "url": "http://og04p0uhh.bkt.clouddn.com/%E5%BE%B7%E5%9B%BD%E5%AE%B6%E5%85%B7%E5%B1%95%E5%8E%85-2.jpg"
+      },
+      {
+        "url": "http://og04p0uhh.bkt.clouddn.com/%E5%BE%B7%E5%9B%BD%E5%AE%B6%E5%85%B7%E5%B1%95%E5%8E%85-8.jpg"
+      },
+      {
+        "url": "http://og04p0uhh.bkt.clouddn.com/%E5%BE%B7%E5%9B%BD%E5%AE%B6%E5%85%B7%E5%B1%95%E5%8E%85-1.jpg"
+      }
+    ],
+    "notes":["国际荣誉 —— 作为主创在北京集美组完成"]
   }
 ]
