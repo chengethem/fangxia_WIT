@@ -11,7 +11,7 @@
           <div class="picItem__pic--title-hover"></div>
         </div>
         <div class="picItem__title">{title}<span class="picItem__subtitle">{en_title}</span></div>
-        <div class="picItem__note">{#note}{.}{/note}</div>
+        <div class="picItem__note">{#notes}{.}{/notes}</div>
         <a href="/project/{$idx}" class="picItem__link--fake item-a"></a>
       </li>
     {/projects}
