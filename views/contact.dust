@@ -9,7 +9,7 @@
       <div class="contact__name">{contact.name}</div>
       <div class="contact__addr">{contact.address}</div>
       <div class="contact__mail">
-        <span>邮箱 </span>
+        <span>邮箱: </span>
         <a class="contact__mail--link" href="mailto:{contact.mail}">{contact.mail}</a>
       </div>
       <div class="en_title contact__name">

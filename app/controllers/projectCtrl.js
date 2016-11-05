@@ -19,21 +19,24 @@ var nav = require('../../model/nav.json');
 
 exports.default = function () {
   var _ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee(ctx, next) {
-    var title, project;
+    var title, project, nav_list;
     return _regenerator2.default.wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
             title = '';
             project = projects[ctx.params.id];
-            _context.next = 4;
+            nav_list = JSON.parse(JSON.stringify(nav));
+
+            nav_list[1].cur = true;
+            _context.next = 6;
             return ctx.render('project', {
               title: title,
-              nav: nav,
+              nav: nav_list,
               project: project
             });
 
-          case 4:
+          case 6:
           case 'end':
             return _context.stop();
         }

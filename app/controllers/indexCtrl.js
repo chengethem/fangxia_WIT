@@ -24,7 +24,7 @@ exports.default = function () {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            title = 'koa2 title';
+            title = '';
             _context.next = 3;
             return ctx.render('index', {
               title: title,
