@@ -1,4 +1,5 @@
 $main-color:#881b20;
+$main-gray:#e2e2e2;
 .hide{
   display:none;
 }
@@ -8,7 +9,7 @@ html, body{
 }
 
 body{
-  background:#fff;
+  background:$main-gray;
   height:100%;
   width:100%;
 }
@@ -17,7 +18,7 @@ body{
   @include pos(left, 0, top, 0, fixed);
   width:100%;
   height:100%;
-  border: 10px solid #fff;
+  border: 10px solid $main-gray;
   box-sizing: border-box;
   pointer-events:none;
   z-index:100;
