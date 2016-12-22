@@ -351,7 +351,7 @@ body { background: #fff; height: 100%; width: 100%; }
 
 .picItem__link--fake { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
 
-.picSwiper { height: calc(100% - 100px); background-color: #595959; width: 100%; overflow: hidden; position: relative; }
+.picSwiper { height: calc(100% - 100px); background-color: #000; width: 100%; overflow: hidden; position: relative; }
 .picSwiper .title { position: absolute; left: 45px; bottom: 19px; font-size: 14px; color: #fff; z-index: 1; }
 .picSwiper .swiper-slide { width: 100%; background-position: center; background-size: auto 100%; background-repeat: no-repeat; }
 .picSwiper .swiper-button-prev, .picSwiper .swiper-button-next { width: 47px; height: 200px; background-size: 50% auto; top: 54%; -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -webkit-transform: translateY(-50%); transform: translateY(-50%); opacity: .6; }
@@ -392,10 +392,10 @@ body { background: #fff; height: 100%; width: 100%; }
 
 .contact__map { float: right; width: 685px; }
 
-.en_title { margin-top: 80px; }
+.en_title { margin-top: 350px; }
 
 .en_desc { max-width: 325px; white-space: pre-line; color: #555; }
 
 .concept { padding-top: 12px; }
 
-.concept__image { width: 800px; margin: 0 auto; }
+.concept__image { width: 640px; margin: 0 auto; margin-top: 60px; }
