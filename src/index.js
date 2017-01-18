@@ -1,16 +1,16 @@
-import http from 'http';
-import Koa from 'koa';
-import path from 'path';
-import views from 'koa-views';
-import convert from 'koa-convert';
-import json from 'koa-json';
-import Bodyparser from 'koa-bodyparser';
-import logger from 'koa-logger';
-import koaStatic from 'koa-static-plus';
-import koaOnError from 'koa-onerror';
-// import config from './config';
+const http = require('http');
+const Koa = require('koa');
+const path = require('path');
+const views = require('koa-views');
+const convert = require('koa-convert');
+const json = require('koa-json');
+const Bodyparser = require('koa-bodyparser');
+const logger = require('koa-logger');
+const koaStatic = require('koa-static-plus');
+const koaOnError = require('koa-onerror');
+// const config = require('./config');
 // const routes = require('./routes');
-import routes from './routes';
+const routes = require('./routes');
 
 const app = new Koa();
 const bodyparser = Bodyparser();
@@ -93,4 +93,4 @@ server.on('listening', () => {
   console.log('Listening on port: %d', port);
 });
 
-export default app;
+module.exports = app;

@@ -1,10 +1,10 @@
-import Router from 'koa-router';
-import indexCtrl from '../controllers/indexCtrl';
-import projectsCtrl from '../controllers/projectsCtrl';
-import projectCtrl from '../controllers/projectCtrl';
-import founderCtrl from '../controllers/founderCtrl';
-import contactCtrl from '../controllers/contactCtrl';
-import conceptCtrl from '../controllers/conceptCtrl';
+const Router = require('koa-router');
+const indexCtrl = require('../controllers/indexCtrl');
+const projectsCtrl = require('../controllers/projectsCtrl');
+const projectCtrl = require('../controllers/projectCtrl');
+const founderCtrl = require('../controllers/founderCtrl');
+const contactCtrl = require('../controllers/contactCtrl');
+const conceptCtrl = require('../controllers/conceptCtrl');
 
 const router = Router();
 
@@ -15,4 +15,4 @@ router.get('/founder', founderCtrl);
 router.get('/contact', contactCtrl);
 router.get('/concept', conceptCtrl);
 
-export default router;
+module.exports = router;

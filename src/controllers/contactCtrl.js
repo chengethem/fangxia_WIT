@@ -1,6 +1,6 @@
 const contact = require('../../model/contact.json');
 const nav = require('../../model/nav.json');
-export default async (ctx, next) => {
+module.exports = async (ctx, next) => {
   const title = '联系我们';
   const nav_list = JSON.parse(JSON.stringify(nav));
   nav_list[2].cur = true;
