@@ -2,7 +2,7 @@
   "apps": [
     {
       "name": "wit",
-      "script": "app/index.js",
+      "script": "src/index.js",
       "instances": 1,
       "merge_logs": true,
       "watch": true,
