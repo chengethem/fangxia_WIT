@@ -4,9 +4,9 @@
 {> "views/layout.dust" /}
 {<content}
   {> "views/partials/header.dust" logostyle="dark" style="header-brighter" /}
-  <div class="concept">
-    <div class="concept__image"><img src="http://ofsttrt7n.bkt.clouddn.com/2000pixnew4.jpg" alt="理念" /></div>
+  <div id="founders-container" class="founders">
   </div>
 {/content}
 {<js}
+<script src="/script/page/founder.js"></script>
 {/js}
