@@ -1,9 +1,9 @@
 {<css}
   <link rel="stylesheet" href="/swiper/swiper.min.css" />
 {/css}
-{> "views/layout.dust" /}
+{> "views/layout.dt" /}
 {<content}
-  {> "views/partials/header.dust" logostyle="dark" style="header-brighter" /}
+  {> "views/partials/header.dt" logostyle="dark" style="header-brighter" /}
   <div class="concept">
     <div class="concept__image"><img src="http://ofsttrt7n.bkt.clouddn.com/2000pixnew4.jpg" alt="理念" /></div>
   </div>

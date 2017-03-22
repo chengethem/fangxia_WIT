@@ -1,8 +1,8 @@
 {<css}
 {/css}
-{> "views/layout.dust" /}
+{> "views/layout.dt" /}
 {<content}
-  {> "views/partials/header.dust" logostyle="dark" style="header-brighter" /}
+  {> "views/partials/header.dt" logostyle="dark" style="header-brighter" /}
   <ul class="picItem__list">
     {#projects}
       <li class="picItem__item">

@@ -1,9 +1,9 @@
 {<css}
   <link rel="stylesheet" href="/swiper/swiper.min.css" />
 {/css}
-{> "views/layout.dust" /}
+{> "views/layout.dt" /}
 {<content}
-  {> "views/partials/header.dust" logostyle="dark" style="header-brighter" /}
+  {> "views/partials/header.dt" logostyle="dark" style="header-brighter" /}
   <div class="contact">
     <div class="contact__content--left">
       <div class="contact__name">{contact.name}</div>
