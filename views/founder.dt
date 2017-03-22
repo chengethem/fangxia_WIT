@@ -4,9 +4,19 @@
 {> "views/layout.dt" /}
 {<content}
   {> "views/partials/header.dt" logostyle="dark" style="header-brighter" /}
-  <div id="founders-container" class="founders">
+  <div class="founders">
+    {#founders}
+      <div class="founder">
+        <div class="founder__photo"><img src="{photo}" /></div>
+        <div class="founder__title">
+          <div class="founder__name">{name}</div>
+          <div class="founder__job">{title}</div>
+        </div>
+        <p class="founder__desc">{desc}</p>
+        <p class="founder__works">{works}</p>
+      </div>
+    {/founders}
   </div>
 {/content}
 {<js}
-<script src="/script/page/founder.js"></script>
 {/js}
