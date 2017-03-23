@@ -13,21 +13,32 @@ module.exports = {
     chunkFilename: '[name].chunk.js'
   },
   module: {
-    loaders: [
-      { test: /\.css$/, loader: 'style!css' },
+    rules: [
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: 'style-loader'
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+            }
+          }]
+      },
       {
         test: /\.jsx?$/,
         loader: 'babel-loader',
-        query: {
+        options: {
           presets: ['es2015', 'stage-0', 'react']
         }
       }
     ]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx'],
-    root: path.resolve('./'),
-    modulesDirectories: ['node_modules']
+    modules: [path.resolve('./'), 'node_modules'],
+    extensions: ['.js', '.jsx']
   },
   plugins: [commonsPlugin],
   devtool: 'source-map'
