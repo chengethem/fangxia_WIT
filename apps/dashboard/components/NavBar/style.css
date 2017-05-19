@@ -1,0 +1,13 @@
+.logo {
+  font-size: 36px;
+  color: #E1E1E1;
+  margin: 15px 15px 0;
+}
+
+.item {
+  color: #fff!important;
+}
+.active {
+  background-color: #fff!important;
+  color: #333!important;
+}

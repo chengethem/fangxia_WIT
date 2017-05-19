@@ -4,13 +4,12 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    client: './client/site.js'
+    dashboard: './client/dashboard.js'
   },
   output: {
     path: 'public/dist/',
     publicPath: '/assets/',
-    filename: '[name].js',
-    chunkFilename: '[name].chunk.js'
+    filename: '[name].js'
   },
   module: {
     rules: [
@@ -30,6 +29,7 @@ module.exports = {
       {
         test: /\.jsx?$/,
         loader: 'babel-loader',
+        exclude: /node_modules/,
         options: {
           presets: ['es2015', 'stage-0', 'react']
         }
@@ -40,6 +40,5 @@ module.exports = {
     modules: [path.resolve('./'), 'node_modules'],
     extensions: ['.js', '.jsx']
   },
-  plugins: [commonsPlugin],
   devtool: 'source-map'
 };
