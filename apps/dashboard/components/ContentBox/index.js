@@ -62,16 +62,26 @@ class ContentBox extends Component {
 
     } else {
       const rows = Object.keys(content).map(key => {
-        if (typeof content[key] !== 'string') {
-          return;
-        }
         let caption = content._caption && content._caption[key] || key;
-        return (
-          <div className={styles.row}>
-            <label className={styles.caption} htmlFor={`id_${key}`}>{caption}</label>
-            <input name={key} className={styles.blank} id={`id_${key}`} type="text" value={content[key]} onChange={handleInputChange} />
-          </div>
-        );
+        switch (typeof content[key]) {
+          case 'string':
+            return (
+              <div className={styles.row}>
+                <label className={styles.caption} htmlFor={`id_${key}`}>{caption}</label>
+                <input name={key} className={styles.blank} id={`id_${key}`} type="text" value={content[key]} onChange={handleInputChange} />
+              </div>
+            );
+          case 'object':
+            return (
+              <div className={styles.row}>
+                <label className={styles.caption1} htmlFor={`id_${key}`}>{caption}</label>
+                <textarea className={styles.blank1} name={key} id={`id_${key}`} value={JSON.stringify(content[key])} onChange={handleInputChange}></textarea>
+              </div>
+            );
+          default:
+            console.info('iterate_array', content[key]);
+            return;
+        }
       });
       substance = (
         <div>

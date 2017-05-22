@@ -44015,6 +44015,10 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _typeof2 = __webpack_require__(122);
+
+var _typeof3 = _interopRequireDefault(_typeof2);
+
 var _defineProperty2 = __webpack_require__(498);
 
 var _defineProperty3 = _interopRequireDefault(_defineProperty2);
@@ -44130,20 +44134,34 @@ var ContentBox = function (_Component) {
         );
       } else {
         var rows = Object.keys(content).map(function (key) {
-          if (typeof content[key] !== 'string') {
-            return;
-          }
           var caption = content._caption && content._caption[key] || key;
-          return _react2.default.createElement(
-            'div',
-            { className: _style2.default.row },
-            _react2.default.createElement(
-              'label',
-              { className: _style2.default.caption, htmlFor: 'id_' + key },
-              caption
-            ),
-            _react2.default.createElement('input', { name: key, className: _style2.default.blank, id: 'id_' + key, type: 'text', value: content[key], onChange: handleInputChange })
-          );
+          switch ((0, _typeof3.default)(content[key])) {
+            case 'string':
+              return _react2.default.createElement(
+                'div',
+                { className: _style2.default.row },
+                _react2.default.createElement(
+                  'label',
+                  { className: _style2.default.caption, htmlFor: 'id_' + key },
+                  caption
+                ),
+                _react2.default.createElement('input', { name: key, className: _style2.default.blank, id: 'id_' + key, type: 'text', value: content[key], onChange: handleInputChange })
+              );
+            case 'object':
+              return _react2.default.createElement(
+                'div',
+                { className: _style2.default.row },
+                _react2.default.createElement(
+                  'label',
+                  { className: _style2.default.caption1, htmlFor: 'id_' + key },
+                  caption
+                ),
+                _react2.default.createElement('textarea', { className: _style2.default.blank1, name: key, id: 'id_' + key, value: JSON.stringify(content[key]), onChange: handleInputChange })
+              );
+            default:
+              console.info('iterate_array', content[key]);
+              return;
+          }
         });
         substance = _react2.default.createElement(
           'div',
@@ -44180,14 +44198,16 @@ exports = module.exports = __webpack_require__(251)(undefined);
 
 
 // module
-exports.push([module.i, "._1lYWFhScwJwLWGECcf1ftx {\n  background: #fff;\n  color: #333;\n  padding: 10px 20px;\n  margin-left: 20px;\n  margin-right: 200px;\n  margin-top: 40px;\n  margin-bottom: 40px;\n  border: 1px solid #d6d6d6;\n}\n._1jWCnmzJNQJwXCSEuuhPI9 {\n  padding: 10px;\n}\n\n._35CyYoVi8MWz8nrwe2L6Fp {\n  width: 8em;\n  display: inline-block;\n  vertical-align: middle;\n  color: #666;\n}\n._3bDzLAlwAqmmrEhrWLpgZa {\n  border: none;\n  border-bottom: 1px solid #eee;\n  vertical-align: middle;\n  width: 40em;\n  line-height: 1.8em;\n  font-size: 14px;\n}\n._3bDzLAlwAqmmrEhrWLpgZa:focus{\n  outline:none;\n}\n._3SKhBHwp347VV9yjGKlzJH {\n  text-align: center;\n}\n.i2ugajaY7s0m9cWJ2_SgR{\n  float: right;\n  color: #999;\n}\n", ""]);
+exports.push([module.i, "._1lYWFhScwJwLWGECcf1ftx {\n  background: #fff;\n  color: #333;\n  padding: 10px 20px;\n  margin-left: 20px;\n  margin-right: 200px;\n  margin-top: 40px;\n  margin-bottom: 40px;\n  border: 1px solid #d6d6d6;\n}\n._1jWCnmzJNQJwXCSEuuhPI9 {\n  padding: 10px;\n}\n\n._35CyYoVi8MWz8nrwe2L6Fp {\n  width: 8em;\n  display: inline-block;\n  vertical-align: middle;\n  color: #666;\n}\n.AjLq0Vw5G_Xx0CcwX9Z-X {\n  vertical-align: top;\n}\n._3bDzLAlwAqmmrEhrWLpgZa {\n  border: none;\n  border-bottom: 1px solid #eee;\n  vertical-align: middle;\n  width: 40em;\n  line-height: 1.8em;\n  font-size: 14px;\n}\n._3bDzLAlwAqmmrEhrWLpgZa:focus {\n  outline:none;\n}\n._1RCntfyHTGA72YpixUNrJW {\n  height: 10em;\n  resize: vertical;\n}\n._3SKhBHwp347VV9yjGKlzJH {\n  text-align: center;\n}\n.i2ugajaY7s0m9cWJ2_SgR{\n  float: right;\n  color: #999;\n}\n", ""]);
 
 // exports
 exports.locals = {
 	"box": "_1lYWFhScwJwLWGECcf1ftx",
 	"row": "_1jWCnmzJNQJwXCSEuuhPI9",
 	"caption": "_35CyYoVi8MWz8nrwe2L6Fp",
+	"caption1": "AjLq0Vw5G_Xx0CcwX9Z-X _35CyYoVi8MWz8nrwe2L6Fp",
 	"blank": "_3bDzLAlwAqmmrEhrWLpgZa",
+	"blank1": "_1RCntfyHTGA72YpixUNrJW _3bDzLAlwAqmmrEhrWLpgZa",
 	"submit-row": "_3SKhBHwp347VV9yjGKlzJH",
 	"right-arrow": "i2ugajaY7s0m9cWJ2_SgR"
 };

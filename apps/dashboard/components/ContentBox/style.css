@@ -18,6 +18,10 @@
   vertical-align: middle;
   color: #666;
 }
+.caption1 {
+  composes: caption;
+  vertical-align: top;
+}
 .blank {
   border: none;
   border-bottom: 1px solid #eee;
@@ -26,8 +30,13 @@
   line-height: 1.8em;
   font-size: 14px;
 }
-.blank:focus{
+.blank:focus {
   outline:none;
+}
+.blank1 {
+  composes: blank;
+  height: 10em;
+  resize: vertical;
 }
 .submit-row {
   text-align: center;
