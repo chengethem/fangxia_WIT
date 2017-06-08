@@ -11,7 +11,7 @@
         </div>
       {/project.pics}
     </div>
-    <div class="title">{project.title}</div>
+    <div class="title">{project.name}</div>
     <div class="swiper-pagination"></div>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>

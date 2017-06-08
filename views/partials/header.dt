@@ -7,13 +7,13 @@
       {#nav}
         <li class="nav__item t_mask_hide">
           {?url}
-            <a href="{url}" class="nav__link{?cur} nav__link--cur{/cur}">{title}</a>
+            <a href="{url}" class="nav__link{?cur} nav__link--cur{/cur}">{name}</a>
           {:else}
-            <div class="nav__item--title t_mask_show{?cur} nav__link--cur{/cur}">{title}</div>
+            <div class="nav__item--title t_mask_show{?cur} nav__link--cur{/cur}">{name}</div>
           {/url}
           <ul class="nav__sublist">
             {#links}
-              <li class="nav__subitem"><a class="nav__link" href="{url}">{title}</a></li>
+              <li class="nav__subitem"><a class="nav__link" href="{url}">{name}</a></li>
             {/links}
           </ul>
         </li>

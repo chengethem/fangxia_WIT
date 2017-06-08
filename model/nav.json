@@ -1,42 +1,42 @@
 [
   {
-    "title": "关于我们",
+    "name": "关于我们",
     "links": [
       {
-        "title": "设计理念",
+        "name": "设计理念",
         "url": "/concept"
       },
       {
-        "title": "创始人",
+        "name": "创始人",
         "url": "/founder"
       },
       {
-        "title": "团队介绍",
+        "name": "团队介绍",
         "url": ""
       },
       {
-        "title": "奖项及媒体",
+        "name": "奖项及媒体",
         "url": ""
       }
     ]
   },
   {
-    "title": "项目展示",
+    "name": "项目展示",
     "url": "/projects"
   },
   {
-    "title": "联系我们",
+    "name": "联系我们",
     "links": [
       {
-        "title": "咨询",
+        "name": "咨询",
         "url": ""
       },
       {
-        "title": "人才招聘",
+        "name": "人才招聘",
         "url": ""
       },
       {
-        "title": "联系方式",
+        "name": "联系方式",
         "url": "/contact"
       }
     ]
