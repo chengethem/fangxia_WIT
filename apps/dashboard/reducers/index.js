@@ -1,18 +1,20 @@
 import { combineReducers } from 'redux';
-import { CHOOSE_CONTENT_TYPE, REQUEST_CONTENT, RECEIVE_CONTENT, UPDATE_CONTENT, REQUESTED_CONTENT } from '../actions/actionTypes';
+import { CHOOSE_CONTENT_TYPE, REQUEST_CONTENT, RECEIVE_CONTENT, UPDATE_CONTENT, REQUESTED_CONTENT, RESET_REQUET_STATUS } from '../actions/actionTypes';
 
 const contents = (state = {}, action) => {
-  console.info('REQUESTED_CONTENT', action);
+  let default_obj = {};
+  if (action && action.playload && action.playload.contents instanceof Array || state instanceof Array) {
+    default_obj = [];
+  }
   switch (action.type) {
     case REQUEST_CONTENT:
-      return action.playload && Object.assign({}, state, action.playload.contents, { loading: true });
+      return action.playload && Object.assign(default_obj, state || default_obj, action.playload.contents, { loading: true });
     case REQUESTED_CONTENT:
-      console.info('REQUESTED_CONTENT');
-      return action.playload && Object.assign({}, state, { loading:false, fetched: false });
+      return action.playload && Object.assign(default_obj, state || default_obj, { loading: false, fetched: false });
     case RECEIVE_CONTENT:
       return action.playload && action.playload.contents;
     case UPDATE_CONTENT:
-      return action.playload && Object.assign(action.playload.contents, { loading:false, fetched: true });
+      return action.playload && Object.assign(action.playload.contents, { loading: false, fetched: true });
     default:
       return state;
   }

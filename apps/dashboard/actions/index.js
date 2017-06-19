@@ -33,7 +33,7 @@ export const updateContent = (contentType, json) => ({
   type: types.UPDATE_CONTENT,
   playload: json
 });
-export const saveContent = (contentType, item, id) => dispatch => {
+export const saveContent = (contentType, item, id, remove, add) => dispatch => {
   dispatch(requestContent(contentType));
   const headers = new Headers({
     'Content-Type': 'application/x-www-form-urlencoded'
@@ -41,7 +41,8 @@ export const saveContent = (contentType, item, id) => dispatch => {
   return fetch(`/dashboard/api/${contentType}`, {
     method: 'POST',
     headers,
-    body: `json=${JSON.stringify({ contentType, item, id })}`
+    //encode chinese & '&'
+    body: `json=${encodeURIComponent(JSON.stringify({ contentType, item, id, remove, add }))}`
   })
     .then(response => response.json())
     .then(json => {
@@ -54,6 +55,27 @@ export const saveContent = (contentType, item, id) => dispatch => {
       dispatch(updateContent({ error }));
     });
 }
+export const removeContent = (contentType, item, id, remove) => dispatch => {
+  const headers = new Headers({
+    'Content-Type': 'application/x-www-form-urlencoded'
+  });
+  return fetch(`/dashboard/api/${contentType}`, {
+    method: 'POST',
+    headers,
+    //encode chinese & '&'
+    body: `json=${encodeURIComponent(JSON.stringify({ contentType, item, id, remove }))}`
+  })
+    .then(response => response.json())
+    .then(json => {
+      console.info('saveContent_resp:', json);
+      setTimeout(() => { dispatch(requestedContent(contentType)) }, 1500);
+      return dispatch(updateContent(contentType, json));
+    })
+    .catch(error => {
+      console.info('ERROR', error);
+      dispatch(updateContent({ error }));
+    });
+};
 export const fetchContent = (contentType) => dispatch => {
   dispatch(requestContent(contentType));
   return fetch(`/dashboard/api/${contentType}`)
@@ -67,3 +89,6 @@ export const fetchContent = (contentType) => dispatch => {
       dispatch(receiveContent({ error }))
     });
 };
+export const resetRequestStatus = () => ({
+  type: types.RESET_REQUET_STATUS
+});

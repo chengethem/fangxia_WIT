@@ -13,9 +13,9 @@ class Content extends Component {
   componentDidMount() {
 
   }
-  save(params, id) {
+  save(params, id, remove, add) {
     const { dispatch, contentType } = this.props;
-    dispatch(saveContent(contentType, params, id));
+    dispatch(saveContent(contentType, params, id, remove, add));
   }
   render() {
     const { contentsByType, contentType, location } = this.props;
@@ -26,15 +26,38 @@ class Content extends Component {
       query[item_kv[0]] = item_kv[1];
     });
     let content = contentsByType && contentType && contentsByType[contentType] || '';
-    content = query.index >= 0 ? content[query.index] : content;
+    let newContent;
+    let sum = content.length || 0;
+    let index;
+    let add = query.add;
+    let order;
+    // console.info('debug_render_contentsByType[contentType]', contentsByType[contentType]);
+    const loading = content.loading;
+    const buttonState = content.loading ? 'loading' : content.fetched ? 'fetched' : 'normal';
+    if (query.index >= 0 && content[query.index]) {
+      content = content[query.index];
+      index = query.index;
+      order = content.order || (+index + 1);
+    }
+    if (add > 0 && sum > 0 && content[sum - 1]) {
+      index = +content[sum - 1].id + 1;
+      newContent = {};
+      Object.keys(content[sum - 1]).map((key) => {
+        if (key === 'id') {
+          return;
+        }
+        newContent[key] = content[sum - 1][key] instanceof Array ? [] : '';
+      });
+      order = content.order || (+sum + 1);
+    }
     return (
-      <ContentBox content={content || {}} save={this.save} index={query.index}></ContentBox>
+      <ContentBox content={newContent || content || {}} contentType={contentType} save={this.save} loading={loading} buttonState={buttonState} sum={sum} order={order} index={index} add={add}></ContentBox>
     );
   }
 }
 
 const mapStateToProps = state => {
-  const { contentType, contentsByType, fetched } = state;
+  const { contentType, contentsByType, requestStatus } = state;
   return state;
 };
 

@@ -19,6 +19,7 @@ router.get('/contact', contactCtrl);
 router.get('/concept', conceptCtrl);
 router.get('/dashboard/api/:contentType?', contentCtrl);
 router.post('/dashboard/api/:contentType?', updateContent);
-router.get('/dashboard/:content?', dashboardCtrl);
+router.get(/^\/dashboard(?:\/|$)/, dashboardCtrl);
+
 
 module.exports = router;

@@ -11,15 +11,10 @@ function readFile(filePath) {
     });
   });
 }
+
 async function readContent(contentType) {
   const contents = await readFile(path.join(__dirname, '../../', `model/${contentType}.json`));
   return contents;
 }
-module.exports = async (ctx, next) => {
-  const contentType = ctx.params.contentType;
-  const contents = await readContent(contentType);
-  return ctx.body = {
-    contentType,
-    contents: JSON.parse(contents)
-  }
-}
+
+module.exports = readContent;

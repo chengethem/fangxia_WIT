@@ -40,8 +40,10 @@
 }
 .submit-row {
   text-align: center;
+  margin-top: 1em;
 }
-.right-arrow{
+.right-arrow {
   float: right;
   color: #999;
 }
+
