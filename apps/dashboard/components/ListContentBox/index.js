@@ -17,8 +17,9 @@ class ContentBox extends Component {
 
     console.info('RENDER_LISTCONTENT', content);
     const items = content instanceof Array ? content.map((item, index) => {
+      const id = item.id >= 0 ? item.id : index;
       return (
-        <ListItem id={index} key={index} containerElement={Link} to={`/dashboard/edit/${contentType}?index=${index}`}>
+        <ListItem id={id} key={id} containerElement={Link} to={`/dashboard/edit/${contentType}?index=${id}`}>
           {item.name}
           <span className={styles['right-arrow']}>»</span>
         </ListItem>

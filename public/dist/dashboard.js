@@ -15502,10 +15502,6 @@ var _ListContent = __webpack_require__(224);
 
 var _ListContent2 = _interopRequireDefault(_ListContent);
 
-var _Projects = __webpack_require__(226);
-
-var _Projects2 = _interopRequireDefault(_Projects);
-
 var _Layout = __webpack_require__(221);
 
 var _Layout2 = _interopRequireDefault(_Layout);
@@ -16285,9 +16281,10 @@ var ContentBox = function (_Component) {
 
       console.info('RENDER_LISTCONTENT', content);
       var items = content instanceof Array ? content.map(function (item, index) {
+        var id = item.id >= 0 ? item.id : index;
         return _react2.default.createElement(
           _List.ListItem,
-          { id: index, key: index, containerElement: _reactRouterDom.Link, to: '/dashboard/edit/' + contentType + '?index=' + index },
+          { id: id, key: id, containerElement: _reactRouterDom.Link, to: '/dashboard/edit/' + contentType + '?index=' + id },
           item.name,
           _react2.default.createElement(
             'span',
@@ -16417,8 +16414,15 @@ var Content = function (_Component) {
       // console.info('debug_render_contentsByType[contentType]', contentsByType[contentType]);
       var loading = content.loading;
       var buttonState = content.loading ? 'loading' : content.fetched ? 'fetched' : 'normal';
-      if (query.index >= 0 && content[query.index]) {
-        content = content[query.index];
+      if (query.index >= 0) {
+        var selectedItem = content instanceof Array && content.filter(function (item) {
+          return +item.id === +query.index;
+        })[0];
+        if (selectedItem) {
+          content = selectedItem;
+        } else if (content[query.index]) {
+          content = content[query.index];
+        }
         index = query.index;
         order = content.order || +index + 1;
       }
@@ -16518,6 +16522,14 @@ var ListContent = function (_Component) {
       var contentType = _props.contentType;
 
       var content = contentsByType && contentType && contentsByType[contentType] || '';
+      if (content instanceof Array) {
+        content.sort(function (a, b) {
+          if (a.order && b.order) {
+            return a.order - b.order;
+          }
+          return a.id - b.id;
+        });
+      }
       return _react2.default.createElement(_ListContentBox2.default, { content: content || {}, contentType: contentType });
     }
   }]);
@@ -16621,62 +16633,7 @@ var mapStateToProps = function mapStateToProps(state) {
 exports.default = (0, _reactRedux.connect)(mapStateToProps)(Nav);
 
 /***/ }),
-/* 226 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _classCallCheck2 = __webpack_require__(29);
-
-var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-
-var _createClass2 = __webpack_require__(30);
-
-var _createClass3 = _interopRequireDefault(_createClass2);
-
-var _possibleConstructorReturn2 = __webpack_require__(32);
-
-var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-
-var _inherits2 = __webpack_require__(31);
-
-var _inherits3 = _interopRequireDefault(_inherits2);
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Projects = function (_Component) {
-  (0, _inherits3.default)(Projects, _Component);
-
-  function Projects() {
-    (0, _classCallCheck3.default)(this, Projects);
-    return (0, _possibleConstructorReturn3.default)(this, (Projects.__proto__ || Object.getPrototypeOf(Projects)).apply(this, arguments));
-  }
-
-  (0, _createClass3.default)(Projects, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        null,
-        'Projects'
-      );
-    }
-  }]);
-  return Projects;
-}(_react.Component);
-
-exports.default = Projects;
-
-/***/ }),
+/* 226 */,
 /* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 

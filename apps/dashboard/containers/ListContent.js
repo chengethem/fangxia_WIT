@@ -15,6 +15,14 @@ class ListContent extends Component {
   render() {
     const { contentsByType, contentType } = this.props;
     let content = contentsByType && contentType && contentsByType[contentType] || '';
+    if (content instanceof Array) {
+      content.sort((a, b) => {
+        if (a.order && b.order) {
+          return a.order - b.order;
+        }
+        return a.id - b.id;
+      });
+    }
     return (
       <ListContentBox content={content || {}} contentType={contentType}></ListContentBox>
     );

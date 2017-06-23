@@ -34,8 +34,13 @@ class Content extends Component {
     // console.info('debug_render_contentsByType[contentType]', contentsByType[contentType]);
     const loading = content.loading;
     const buttonState = content.loading ? 'loading' : content.fetched ? 'fetched' : 'normal';
-    if (query.index >= 0 && content[query.index]) {
-      content = content[query.index];
+    if (query.index >= 0) {
+      let selectedItem = content instanceof Array && content.filter((item) => +item.id === +query.index)[0];
+      if (selectedItem) {
+        content = selectedItem;
+      } else if (content[query.index]) {
+        content = content[query.index];
+      }
       index = query.index;
       order = content.order || (+index + 1);
     }
