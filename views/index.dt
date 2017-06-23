@@ -9,7 +9,7 @@
       <div class="swiper-wrapper">
         {#projects}
           <div class="swiper-slide" style="background-image:url({cover})">
-            <div class="title">{title}<span class="banner__entitle">{en_title}</span></div>
+            <div class="title">{name}<span class="banner__entitle">{en_name}</span></div>
           </div>
         {/projects}
       </div>
