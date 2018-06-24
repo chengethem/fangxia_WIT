@@ -9,9 +9,6 @@ class ListContent extends Component {
     const { dispatch, list, match } = this.props;
     dispatch(fetchContent(match.params.content));
   }
-  componentDidMount() {
-
-  }
   render() {
     const { contentsByType, contentType } = this.props;
     let content = contentsByType && contentType && contentsByType[contentType] || '';
