@@ -92,7 +92,7 @@ class ContentBox extends Component {
     console.info('DELETECONFIRM', contentType);
     save(state, content.id || index, 'delete');
     // window.location = `/dashboard/list/${contentType}`;
-     setTimeout(() => {
+    setTimeout(() => {
       window.location = `/dashboard/list/${contentType}`;
     }, 10);
   }
@@ -107,6 +107,7 @@ class ContentBox extends Component {
   }
   render() {
     let { content, save, loading, buttonState, index, sum, add } = this.props;
+    console.info('___content', content);
     sum = sum || 0;
     let order = content.order || this.props.order || index || 1;
     const handleInputChange = this.handleInputChange;

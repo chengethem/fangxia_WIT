@@ -5,7 +5,7 @@
 {<content}
   {> "views/partials/header.dt" logostyle="dark" style="header-brighter" /}
   <div class="concept">
-    <div class="concept__image"><img src="http://ofsttrt7n.bkt.clouddn.com/2000pixnew4.jpg" alt="理念" /></div>
+    <div class="concept__image"><img src="/images/concept.jpg" alt="理念" /></div>
   </div>
 {/content}
 {<js}

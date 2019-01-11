@@ -13,6 +13,7 @@ function readFile(filePath) {
 }
 async function readContent(contentType) {
   const contents = await readFile(path.join(__dirname, '../../', `model/${contentType}.json`));
+  console.info('api__contents', JSON.parse(contents));
   return contents;
 }
 module.exports = async (ctx, next) => {

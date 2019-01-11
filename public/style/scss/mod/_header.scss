@@ -12,12 +12,14 @@
     position:relative;
     @include pos(left, 45px, top, 58%);
     @include transform(translateY(-50%));
-    background-image:url('http://ofsttrt7n.bkt.clouddn.com/1222-logo1.png');
+    /*background-image:url('http://ofsttrt7n.bkt.clouddn.com/1222-logo1.png');*/
+    background-image:url('/images/logo.png');
     background-size:100%;
     background-repeat:no-repeat;
   }
   .logo-dark{
-    background-image:url('http://ofsttrt7n.bkt.clouddn.com/v1222.png');
+    /*background-image:url('http://ofsttrt7n.bkt.clouddn.com/v1222.png');*/
+    background-image:url('/images/darklogo.png');
   }
   .header__mask{
     height:290px;

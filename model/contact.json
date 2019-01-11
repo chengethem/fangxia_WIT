@@ -1,18 +1,1 @@
-{
-  "name": "方夏建筑设计（北京）有限公司",
-  "address": "北京市朝阳区酒仙桥东风艺术区北区10号A座",
-  "mail": "Witarch@lookout.com",
-  "map": "http://ofsttrt7n.bkt.clouddn.com/1222b.jpg",
-  "en_map": "http://ofsttrt7n.bkt.clouddn.com/12.22y.jpg",
-  "en_title": "方夏建筑设计伦敦办公室",
-  "en_desc": "WIT Design and Research Office, 27-29 Vauxhall Grove London, SW8 1SY\nNumber: ＋44（0）7990240676",
-  "_caption": {
-    "name": "公司名称",
-    "address": "地址",
-    "mail": "邮件",
-    "map": "地图网址",
-    "en_map": "英国地图网址",
-    "en_title": "公司英文名称",
-    "en_desc": "英国地址"
-  }
-}
+{"name":"方夏建筑设计（北京）有限公司","address":"北京市朝阳区酒仙桥东风艺术区北区10号A座","mail":"Witarch@lookout.com","map":"/images/map.jpg","en_map":"","en_title":"方夏建筑设计伦敦办公室","en_desc":"WIT Design and Research Office, 27-29 Vauxhall Grove London, SW8 1SY\nNumber: ＋44（0）7990240676","_caption":{"name":"公司名称","address":"地址","mail":"邮件","map":"地图网址","en_map":"英国地图网址","en_title":"公司英文名称","en_desc":"英国地址"}}
