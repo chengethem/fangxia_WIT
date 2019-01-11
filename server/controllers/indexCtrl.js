@@ -6,6 +6,7 @@ module.exports = async (ctx, next) => {
   const title = '';
   const projects = JSON.parse(await readContent('projects'));
   const nav = JSON.parse(await readContent('nav'));
+  console.info('nav__', nav);
   projects.sort((a, b) => {
     if (a.order && b.order) {
       return a.order - b.order;
